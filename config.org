@@ -141,6 +141,23 @@ I need =vi= like keybinds
                    `(lambda (c)
                   (if (char-equal c ?<) t (,electric-pair-inhibit-predicate c))))))
 #+end_src
+*** Add more autopairs
+From [[https://emacs.stackexchange.com/a/18876][Sean Whitton]]
+#+begin_src emacs-lisp
+;; From `https://emacs.stackexchange.com/questions/2538/how-to-define-additional-mode-specific-pairs-for-electric-pair-mode'
+(defmacro nkl/add-mode-pairs (hook pairs)
+  `(add-hook ,hook
+	     (lambda ()
+	       (setq-local electric-pair-pairs (append electric-pair-pairs ,pairs))
+               (setq-local electric-pair-text-pairs electric-pair-pairs))))
+
+;; TODO move to emacs lisp section
+(nkl/add-mode-pairs 'emacs-lisp-mode-hook '((?\` . ?\')))
+(nkl/add-mode-pairs 'org-mode-hook '((?\= . ?\=)))
+(nkl/add-mode-pairs 'org-mode-hook '((?\~ . ?\~)))
+(nkl/add-mode-pairs 'org-mode-hook '((?\* . ?\*)))
+(nkl/add-mode-pairs 'org-mode-hook '((?\/ . ?\/)))
+#+end_src
 *** Code indentation
 Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
