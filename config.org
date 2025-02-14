@@ -92,6 +92,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (setq ibuffer-expert t)
 #+end_src
+*** Show columns
+#+begin_src emacs-lisp
+(column-number-mode 1)
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
