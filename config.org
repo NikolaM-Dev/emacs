@@ -21,6 +21,12 @@ I need =vi= like keybinds
   :config
   (evil-mode 1))
 #+end_src
+*** Which Key
+#+begin_src emacs-lisp
+(use-package which-key
+  :config
+  (which-key-mode))
+#+end_src
 ** Options
 *** Autopairs
 #+begin_src emacs-lisp
