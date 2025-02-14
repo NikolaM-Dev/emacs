@@ -200,6 +200,10 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (use-package dashboard
   :config
+  (setq dashboard-banner-logo-title "Be a high performance person, being all that you can be every day 24/7, 365")
+  (setq dashboard-center-content t)
+  (setq dashboard-vertically-center-content t)
+
   (dashboard-setup-startup-hook))
 #+end_src
 *** Modeline
