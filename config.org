@@ -81,3 +81,8 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   (set-face-attribute 'fixed-pitch nil :family mono-spaced-font :height 1.0)
   (set-face-attribute 'variable-pitch nil :family proportionately-spaced-font :height 1.0))
 #+end_src
+*** Remove unwanted items
+**** Menu bar
+#+begin_src emacs-lisp
+(menu-bar-mode -1)
+#+end_src
