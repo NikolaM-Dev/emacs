@@ -20,7 +20,15 @@
 #+end_src
 *** ~evil-mode~
 I need =vi= like keybinds
+**** Custom split functions
+***** window split
 #+begin_src emacs-lisp
+(defun nkl/window-split ()
+  (interactive)
+  (split-window-below)
+  (balance-windows)
+  (other-window 1))
+#+end_src
 (use-package evil
   :config
   (evil-set-initial-state 'ibuffer-mode 'normal)
