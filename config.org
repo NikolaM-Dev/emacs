@@ -36,6 +36,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp 
 (fido-vertical-mode 1)
 #+end_src
+*** Relative numbers
+#+begin_src emacs-lisp
+(setq display-line-numbers-type 'relative)
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
