@@ -64,6 +64,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (setq make-backup-files nil)
 #+end_src
+*** Ibuffer
+#+begin_src emacs-lisp
+(setq ibuffer-expet t)
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
