@@ -19,6 +19,7 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (use-package evil
   :config
+  (evil-set-initial-state 'ibuffer-mode 'normal)
   (evil-mode 1))
 #+end_src
 *** Which Key
