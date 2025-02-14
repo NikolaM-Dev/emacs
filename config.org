@@ -28,6 +28,10 @@ I need =vi= like keybinds
   :config
   (which-key-mode))
 #+end_src
+*** Try
+#+begin_src emacs-lisp
+(use-package try)
+#+end_src
 ** Options
 *** Autopairs
 #+begin_src emacs-lisp
