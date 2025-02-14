@@ -86,3 +86,7 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (menu-bar-mode -1)
 #+end_src
+**** Scroll bar
+#+begin_src emacs-lisp
+(scroll-bar-mode -1)
+#+end_src
