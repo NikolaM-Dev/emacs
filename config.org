@@ -14,3 +14,10 @@
 #+begin_src emacs-lisp
 (setq use-package-always-ensure t)
 #+end_src
+*** ~evil-mode~
+I need =vi= like keybinds
+#+begin_src emacs-lisp
+  (use-package evil
+    :config
+    (evil-mode 1))
+#+end_src
