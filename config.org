@@ -27,6 +27,7 @@ I need =vi= like keybinds
 (electric-pair-mode 1)
 #+end_src
 ** Keybinds
+*** Edit config
 #+begin_src emacs-lisp
 (defun nkl/edit-config ()
   (interactive)
