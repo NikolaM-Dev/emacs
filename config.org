@@ -60,6 +60,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (setq custom-file (make-temp-file "emacs-custom-"))
 #+end_src
+*** Disable backups
+#+begin_src emacs-lisp
+(setq make-backup-files nil)
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
