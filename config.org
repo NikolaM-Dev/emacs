@@ -119,7 +119,7 @@ I need =vi= like keybinds
 (global-set-key [remap list-buffers] 'ibuffer)
 #+end_src
 ** Emacs lisp
-** Rainbow delimiters
+*** Rainbow delimiters
 #+begin_src emacs-lisp
 (use-package rainbow-delimiters
   :hook (emacs-lisp-mode . rainbow-delimiters-mode))
