@@ -42,6 +42,7 @@ I need =vi= like keybinds
 (use-package evil
   :config
   (evil-set-initial-state 'ibuffer-mode 'normal)
+  (evil-set-initial-state 'package-menu-mode 'normal)
 
   (define-key evil-window-map "s" 'nkl/window-split)
   (define-key evil-window-map "v" 'nkl/window-vsplit)
