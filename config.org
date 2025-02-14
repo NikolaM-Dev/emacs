@@ -10,3 +10,7 @@
 
 (package-initialize)
 #+end_src
+*** ~use-package~
+#+begin_src emacs-lisp
+(setq use-package-always-ensure t)
+#+end_src
