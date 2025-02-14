@@ -56,6 +56,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (defalias 'yes-or-no-p 'y-or-n-p)
 #+end_src
+*** Custom file
+#+begin_src emacs-lisp
+(setq custom-file (make-temp-file "emacs-custom-"))
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
