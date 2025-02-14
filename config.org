@@ -26,6 +26,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (electric-pair-mode 1)
 #+end_src
+*** =FIDO=
+#+begin_src emacs-lisp 
+(fido-vertical-mode 1)
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
