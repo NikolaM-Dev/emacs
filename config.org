@@ -44,6 +44,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (global-display-line-numbers-mode t)
 #+end_src
+*** Short answers
+#+begin_src emacs-lisp
+(defalias 'yes-or-no-p 'y-or-n-p)
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
