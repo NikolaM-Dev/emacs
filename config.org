@@ -1,3 +1,12 @@
 #+title: Nikola's Emacs configuration
 
 * Nikola's Emacs configuration
+** Packages
+*** ~package.el~
+#+begin_src emacs-lisp
+(require 'package)
+
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+
+(package-initialize)
+#+end_src
