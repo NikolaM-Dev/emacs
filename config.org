@@ -21,3 +21,9 @@ I need =vi= like keybinds
     :config
     (evil-mode 1))
 #+end_src
+** 🦄 Org
+*** Code indentation
+Set src blocks automatic indent to ~0~ instead of ~1~
+#+begin_src emacs-lisp
+(setq org-edit-src-content-indentation 0)
+#+end_src
