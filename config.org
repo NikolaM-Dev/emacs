@@ -67,6 +67,13 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (require 'org-tempo)
 #+end_src
+*** Disable ~<~ autopair in org-mode
+#+begin_src emacs-lisp
+(add-hook 'org-mode-hook (lambda ()
+           (setq-local electric-pair-inhibit-predicate
+                   `(lambda (c)
+                  (if (char-equal c ?<) t (,electric-pair-inhibit-predicate c))))))
+#+end_src
 *** Code indentation
 Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
