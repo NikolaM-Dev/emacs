@@ -201,3 +201,9 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   :config
   (dashboard-setup-startup-hook))
 #+end_src
+** Autocomplete
+#+begin_src emacs-lisp
+(use-package company
+  :config
+  (global-company-mode))
+#+end_src
