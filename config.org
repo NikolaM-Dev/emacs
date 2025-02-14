@@ -35,6 +35,15 @@ I need =vi= like keybinds
 
 (global-set-key (kbd "C-c e") 'nkl/edit-config) ; [C]onfig [E]dit
 #+end_src
+*** Update config
+#+begin_src emacs-lisp
+(defun nkl/reload-config ()
+  (interactive)
+  (org-babel-load-file
+   (expand-file-name "config.org" user-emacs-directory)))
+
+(global-set-key (kbd "C-c r") 'nkl/reload-config) ; [C]onfig [R]eload
+#+end_src
 ** 🦄 Org
 *** Code indentation
 Set src blocks automatic indent to ~0~ instead of ~1~
