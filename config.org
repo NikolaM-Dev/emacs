@@ -26,6 +26,14 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (electric-pair-mode 1)
 #+end_src
+** Keybinds
+#+begin_src emacs-lisp
+(defun nkl/edit-config ()
+  (interactive)
+  (find-file (expand-file-name "config.org" user-emacs-directory)))
+
+(global-set-key (kbd "C-c e") 'nkl/edit-config) ; [C]onfig [E]dit
+#+end_src
 ** 🦄 Org
 *** Code indentation
 Set src blocks automatic indent to ~0~ instead of ~1~
