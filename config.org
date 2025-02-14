@@ -80,6 +80,11 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (require 'org-tempo)
 #+end_src
+*** Add ~<el~ to expand ~emacs-lisp~ code block
+#+begin_src emacs-lisp
+(add-to-list 'org-structure-template-alist
+	     '("el" . "src emacs-lisp"))
+#+end_src
 *** Disable ~<~ autopair in org-mode
 #+begin_src emacs-lisp
 (add-hook 'org-mode-hook (lambda ()
