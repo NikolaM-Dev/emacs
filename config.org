@@ -68,3 +68,10 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   (load-theme 'doom-ayu-mirage t))
 #+end_src
 *** Fonts
+#+begin_src emacs-lisp
+(let ((mono-spaced-font "Maple Mono NF")
+      - (proportionately-spaced-font "JetBrainsMono Nerd Font"))
+  (set-face-attribute 'default nil :family mono-spaced-font :height 132)
+  (set-face-attribute 'fixed-pitch nil :family mono-spaced-font :height 1.0)
+  (set-face-attribute 'variable-pitch nil :family proportionately-spaced-font :height 1.0))
+#+end_src
