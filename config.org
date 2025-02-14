@@ -45,6 +45,10 @@ I need =vi= like keybinds
 (global-set-key (kbd "C-c r") 'nkl/reload-config) ; [C]onfig [R]eload
 #+end_src
 ** 🦄 Org
+*** Tempo
+#+begin_src emacs-lisp
+(require 'org-tempo)
+#+end_src
 *** Code indentation
 Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
