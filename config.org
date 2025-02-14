@@ -145,7 +145,7 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (setq initial-scratch-message nil)
 #+end_src
-*** Highlith current cursor position
+*** Highlight current cursor position
 #+begin_src emacs-lisp
 (global-hl-line-mode)
 #+end_src
