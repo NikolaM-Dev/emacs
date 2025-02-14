@@ -98,3 +98,7 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (setq inhibit-startup-message t)
 #+end_src
+**** ~*scratch*~ message
+#+begin_src emacs-lisp
+(setq initial-scratch-message nil)
+#+end_src
