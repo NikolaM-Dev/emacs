@@ -210,6 +210,6 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 ** Autocomplete
 #+begin_src emacs-lisp
 (use-package company
+  :init (global-company-mode)
   :config
-  (global-company-mode))
 #+end_src
