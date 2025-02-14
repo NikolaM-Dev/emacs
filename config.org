@@ -97,6 +97,13 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (setq org-edit-src-content-indentation 0)
 #+end_src
+*** Org Superstar
+#+begin_src emacs-lisp
+(use-package org-superstar
+  :config
+  (setq org-hide-leading-stars t)
+  (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1))))
+#+end_src
 ** UI
 *** Theme
 #+begin_src emacs-lisp
