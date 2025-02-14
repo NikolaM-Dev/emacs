@@ -201,6 +201,11 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   :config
   (dashboard-setup-startup-hook))
 #+end_src
+*** Modeline
+#+begin_src emacs-lisp
+(use-package doom-modeline
+  :init (doom-modeline-mode))
+#+end_src
 ** Autocomplete
 #+begin_src emacs-lisp
 (use-package company
