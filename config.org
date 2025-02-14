@@ -1,0 +1,3 @@
+#+title: Nikola's Emacs configuration
+
+* Nikola's Emacs configuration
