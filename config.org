@@ -94,3 +94,7 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (tool-bar-mode -1)
 #+end_src
+**** Splash screen
+#+begin_src emacs-lisp
+(setq inhibit-startup-message t)
+#+end_src
