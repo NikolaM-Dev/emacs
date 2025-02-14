@@ -15,6 +15,7 @@
 #+end_src
 *** ~use-package~
 #+begin_src emacs-lisp
+(require 'use-package-ensure)
 (setq use-package-always-ensure t)
 #+end_src
 *** ~evil-mode~
