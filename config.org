@@ -29,6 +29,14 @@ I need =vi= like keybinds
   (balance-windows)
   (other-window 1))
 #+end_src
+***** window vsplitv
+#+begin_src emacs-lisp
+(defun nkl/window-vsplit ()
+  (interactive)
+  (split-window-right)
+  (balance-windows)
+  (other-window 1))
+#+end_src
 (use-package evil
   :config
   (evil-set-initial-state 'ibuffer-mode 'normal)
