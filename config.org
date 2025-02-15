@@ -238,7 +238,8 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   :bind (
 	 :map company-active-map
 	      ("SPC" . company-abort))
-  :init (global-company-mode)
+  :init
+  (global-company-mode)
   :config
   (setq company-idle-delay 0)
   (setq company-minimum-prefix-length 1))
