@@ -40,6 +40,9 @@ I need =vi= like keybinds
 **** Setup
 #+begin_src emacs-lisp
 (use-package evil
+  :init
+  (setq evil-want-integration t) ;; This is optional since it's already set to t by default.
+  (setq evil-want-keybinding nil)
   :config
   (evil-set-initial-state 'ibuffer-mode 'normal)
   (evil-set-initial-state 'package-menu-mode 'normal)
@@ -48,6 +51,13 @@ I need =vi= like keybinds
   (define-key evil-window-map "v" 'nkl/window-vsplit)
 
   (evil-mode 1))
+#+end_src
+**** ~evil-collection~
+#+begin_src emacs-lisp
+(use-package evil-collection
+  :after evil
+  :config
+  (evil-collection-init))
 #+end_src
 *** Which Key
 #+begin_src emacs-lisp
