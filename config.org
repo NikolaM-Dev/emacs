@@ -264,7 +264,7 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (use-package yasnippet
   :config
-  (setq yas-snippet-dirs (list (expand-file-name "snippets/" user-emacs-directory)))
+  (setq yas-snippet-dirs (list (expand-file-name "snippets" user-emacs-directory)))
 
   (yas-global-mode))
 #+end_src
