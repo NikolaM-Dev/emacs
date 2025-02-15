@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: backup with timestamp
+# key: bak
+# --
+feat: Add backup at `(format-time-string "%H:%M:%S")` on `(format-time-string "%Y-%m-%d")`
