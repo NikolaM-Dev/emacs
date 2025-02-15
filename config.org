@@ -103,6 +103,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (column-number-mode 1)
 #+end_src
+*** Remember last cursor position in the file
+#+begin_src emacs-lisp
+(save-place-mode)
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
