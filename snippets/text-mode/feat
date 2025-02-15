@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: feature
+# key: feat
+# --
+feat(${1:scope}): $0
