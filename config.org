@@ -107,6 +107,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (save-place-mode)
 #+end_src
+*** Refresh buffers when the under file has changed
+#+begin_src emacs-lisp
+(global-auto-revert-mode)
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
