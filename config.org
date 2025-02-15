@@ -159,10 +159,11 @@ From [[https://emacs.stackexchange.com/a/18876][Sean Whitton]]
 
 ;; TODO move to emacs lisp section
 (nkl/add-mode-pairs 'emacs-lisp-mode-hook '((?\` . ?\')))
-(nkl/add-mode-pairs 'org-mode-hook '((?\= . ?\=)))
-(nkl/add-mode-pairs 'org-mode-hook '((?\~ . ?\~)))
-(nkl/add-mode-pairs 'org-mode-hook '((?\* . ?\*)))
+
 (nkl/add-mode-pairs 'org-mode-hook '((?\/ . ?\/)))
+(nkl/add-mode-pairs 'org-mode-hook '((?\= . ?\=)))
+(nkl/add-mode-pairs 'org-mode-hook '((?\_ . ?\_)))
+(nkl/add-mode-pairs 'org-mode-hook '((?\~ . ?\~)))
 #+end_src
 *** Code indentation
 Set src blocks automatic indent to ~0~ instead of ~1~
