@@ -168,12 +168,12 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 (use-package org-superstar
   :config
   (setq org-hide-leading-stars t)
-  (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1))))
+  (add-hook 'org-mode-hook 'org-superstar-mode))
 #+end_src
 *** TODO Add that ~TAB~ works like in ~emacs-mode~
 *** Indent
 #+begin_src emacs-lisp
-(add-hook 'org-mode-hook (lambda () (org-indent-mode)))
+(add-hook 'org-mode-hook 'org-indent-mode)
 #+end_src
 ** UI
 *** Theme
