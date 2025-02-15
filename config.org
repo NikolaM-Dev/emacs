@@ -151,7 +151,6 @@ I need =vi= like keybinds
 *** Add more autopairs
 From [[https://emacs.stackexchange.com/a/18876][Sean Whitton]]
 #+begin_src emacs-lisp
-;; From `https://emacs.stackexchange.com/questions/2538/how-to-define-additional-mode-specific-pairs-for-electric-pair-mode'
 (defmacro nkl/add-mode-pairs (hook pairs)
   `(add-hook ,hook
 	     (lambda ()
