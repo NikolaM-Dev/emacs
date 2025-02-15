@@ -244,3 +244,7 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   (setq company-idle-delay 0)
   (setq company-minimum-prefix-length 1))
 #+end_src
+** MaGit
+#+begin_src emacs-lisp
+(use-package magit)
+#+end_src
