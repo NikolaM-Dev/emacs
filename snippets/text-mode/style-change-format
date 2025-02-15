@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: style change formatting
+# key: scf
+# --
+style(${1:scope}): Change formatting$0
