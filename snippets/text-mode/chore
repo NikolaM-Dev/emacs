@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: chore
+# key: chore
+# --
+chore(${1:scope}): $0
