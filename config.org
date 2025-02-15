@@ -111,6 +111,10 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (global-auto-revert-mode)
 #+end_src
+*** Save minibuffer history
+#+begin_src emacs-lisp
+(savehist-mode)
+#+end_src
 ** Keybinds
 *** Edit config
 #+begin_src emacs-lisp
