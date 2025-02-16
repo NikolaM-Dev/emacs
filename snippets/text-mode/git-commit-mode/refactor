@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: feature
-# key: feat
+# name: refactor
+# key: refactor
 # --
-feat(${1:scope}): $0
+refactor(${1:scope}): $0
