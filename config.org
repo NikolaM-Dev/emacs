@@ -4,8 +4,8 @@
 #+startup: show2levels
 :end:
 
-** Packages
-*** ~package.el~
+* Packages
+** ~package.el~
 #+begin_src emacs-lisp
 (require 'package)
 
