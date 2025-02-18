@@ -110,7 +110,7 @@ I need =vi= like keybinds
 #+end_src
 ** Remember last cursor position in the file
 #+begin_src emacs-lisp
-(save-place-mode)
+(save-place-mode 1)
 #+end_src
 ** Refresh buffers when the under file has changed
 #+begin_src emacs-lisp
