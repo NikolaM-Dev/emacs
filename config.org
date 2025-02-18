@@ -199,14 +199,12 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (add-hook 'org-mode-hook 'org-indent-mode)
 #+end_src
-** UI
-*** Theme
+* UI
+** Theme
 #+begin_src emacs-lisp
-(use-package doom-themes
+(use-package ef-themes
   :config
-  (setq doom-themes-enable-bold t)   ; if nil, bold is universally disabled
-  (setq doom-themes-enable-italic t) ; if nil, italics is universally disabled
-  (load-theme 'doom-ayu-mirage t))
+  (load-theme 'ef-dream t))
 #+end_src
 ** Fonts
 #+begin_src emacs-lisp
