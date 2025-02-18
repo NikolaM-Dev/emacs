@@ -192,12 +192,9 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 (use-package org-superstar
   :config
   (setq org-hide-leading-stars 1)
+  ; (setq org-superstar-special-todo-items -1)
   (add-hook 'org-mode-hook 'org-superstar-mode))
 #+end_src
-*** TODO Add that ~TAB~ works like in ~emacs-mode~
-*** Indent
-#+begin_src emacs-lisp
-(add-hook 'org-mode-hook 'org-indent-mode)
 ** Change Org Mode Headings Line Height
 #+begin_src emacs-lisp
 (custom-set-faces
