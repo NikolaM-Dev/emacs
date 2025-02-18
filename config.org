@@ -21,9 +21,10 @@
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
 #+end_src
+** ~evil-mode~
 I need =vi= like keybinds
-**** Custom split functions
-***** window split
+*** Custom split functions
+**** window split
 #+begin_src emacs-lisp
 (defun nkl/window-split ()
   (interactive)
@@ -31,7 +32,7 @@ I need =vi= like keybinds
   (balance-windows)
   (other-window 1))
 #+end_src
-***** window vsplitv
+**** window vsplitv
 #+begin_src emacs-lisp
 (defun nkl/window-vsplit ()
   (interactive)
@@ -53,74 +54,74 @@ I need =vi= like keybinds
 
   (evil-mode 1))
 #+end_src
-**** ~evil-collection~
+*** ~evil-collection~
 #+begin_src emacs-lisp
 (use-package evil-collection
   :after evil
   :config
   (evil-collection-init))
 #+end_src
-*** Which Key
+** Which Key
 #+begin_src emacs-lisp
 (use-package which-key
   :config
   (which-key-mode))
 #+end_src
-*** Try
+** Try
 #+begin_src emacs-lisp
 (use-package try)
 #+end_src
-** Options
-*** Autopairs
+* Options
+** Autopairs
 #+begin_src emacs-lisp
 (electric-pair-mode 1)
 #+end_src
-*** =FIDO=
-#+begin_src emacs-lisp 
+** =FIDO=
+#+begin_src emacs-lisp
 (fido-vertical-mode 1)
 #+end_src
-*** Relative numbers
+** Relative numbers
 #+begin_src emacs-lisp
 (setq display-line-numbers-type 'relative)
 #+end_src
-*** Line numbers
+** Line numbers
 #+begin_src emacs-lisp
 (global-display-line-numbers-mode t)
 #+end_src
-*** Short answers
+** Short answers
 #+begin_src emacs-lisp
 (defalias 'yes-or-no-p 'y-or-n-p)
 #+end_src
-*** Custom file
+** Custom file
 #+begin_src emacs-lisp
 (setq custom-file (make-temp-file "emacs-custom-"))
 #+end_src
-*** Disable backups
+** Disable backups
 #+begin_src emacs-lisp
 (setq make-backup-files nil)
 #+end_src
-*** Ibuffer
+** Ibuffer
 #+begin_src emacs-lisp
 (setq ibuffer-expert t)
 #+end_src
-*** Show columns
+** Show columns
 #+begin_src emacs-lisp
 (column-number-mode 1)
 #+end_src
-*** Remember last cursor position in the file
+** Remember last cursor position in the file
 #+begin_src emacs-lisp
 (save-place-mode)
 #+end_src
-*** Refresh buffers when the under file has changed
+** Refresh buffers when the under file has changed
 #+begin_src emacs-lisp
 (global-auto-revert-mode)
 #+end_src
-*** Save minibuffer history
+** Save minibuffer history
 #+begin_src emacs-lisp
 (savehist-mode)
 #+end_src
-** Keybinds
-*** Edit config
+* Keybinds
+** Edit config
 #+begin_src emacs-lisp
 (defun nkl/edit-config ()
   (interactive)
@@ -128,7 +129,7 @@ I need =vi= like keybinds
 
 (global-set-key (kbd "C-c e") 'nkl/edit-config) ; [C]onfig [E]dit
 #+end_src
-*** Update config
+** Update config
 #+begin_src emacs-lisp
 (defun nkl/reload-config ()
   (interactive)
@@ -152,19 +153,19 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (require 'org-tempo)
 #+end_src
-*** Add ~<el~ to expand ~emacs-lisp~ code block
+** Add ~<el~ to expand ~emacs-lisp~ code block
 #+begin_src emacs-lisp
 (add-to-list 'org-structure-template-alist
 	     '("el" . "src emacs-lisp"))
 #+end_src
-*** Disable ~<~ autopair in org-mode
+** Disable ~<~ autopair in org-mode
 #+begin_src emacs-lisp
 (add-hook 'org-mode-hook (lambda ()
            (setq-local electric-pair-inhibit-predicate
                    `(lambda (c)
                   (if (char-equal c ?<) t (,electric-pair-inhibit-predicate c))))))
 #+end_src
-*** Add more autopairs
+** Add more autopairs
 From [[https://emacs.stackexchange.com/a/18876][Sean Whitton]]
 #+begin_src emacs-lisp
 (defmacro nkl/add-mode-pairs (hook pairs)
@@ -181,12 +182,12 @@ From [[https://emacs.stackexchange.com/a/18876][Sean Whitton]]
 (nkl/add-mode-pairs 'org-mode-hook '((?\_ . ?\_)))
 (nkl/add-mode-pairs 'org-mode-hook '((?\~ . ?\~)))
 #+end_src
-*** Code indentation
+** Code indentation
 Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (setq org-edit-src-content-indentation 0)
 #+end_src
-*** Org Superstar
+** Org Superstar
 #+begin_src emacs-lisp
 (use-package org-superstar
   :config
