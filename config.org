@@ -16,12 +16,11 @@
 (unless package-archive-contents
   (package-refresh-contents))
 #+end_src
-*** ~use-package~
+** ~use-package~
 #+begin_src emacs-lisp
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
 #+end_src
-*** ~evil-mode~
 I need =vi= like keybinds
 **** Custom split functions
 ***** window split
@@ -40,7 +39,7 @@ I need =vi= like keybinds
   (balance-windows)
   (other-window 1))
 #+end_src
-**** Setup
+*** Setup
 #+begin_src emacs-lisp
 (use-package evil
   :init
