@@ -263,6 +263,8 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 	 :map company-active-map (
 				   ("TAB" . nil)
 				   ("<tab>" . nil)
+				   ("C-j" . company-select-next-or-abort)
+				   ("C-k" . company-select-previous-or-abort)))
   :init
   (global-company-mode)
   :config
