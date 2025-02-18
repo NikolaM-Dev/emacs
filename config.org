@@ -156,6 +156,12 @@ I need =vi= like keybinds
 		 (setq evil-auto-indent -1)
 		 (visual-line-mode 1))
 #+end_src
+** Setup
+#+begin_src emacs-lisp
+(use-package org
+  :hook
+  (nkl/on-org-mode)
+#+end_src
 ** Tempo
 #+begin_src emacs-lisp
 (require 'org-tempo)
