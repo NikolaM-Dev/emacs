@@ -161,6 +161,8 @@ I need =vi= like keybinds
 (use-package org
   :hook
   (nkl/on-org-mode)
+  :config
+  (setq org-ellipsis "…")  ; ⤵ ▼ ⬎ …  
 #+end_src
 ** Tempo
 #+begin_src emacs-lisp
