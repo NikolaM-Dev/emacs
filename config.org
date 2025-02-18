@@ -39,6 +39,17 @@
 
   (nkl/leader-key "u" '(universal-argument :wk "[U]niversal Argument")))
 #+end_src
+** Helpful
+#+begin_src emacs-lisp
+(use-package helpful
+  :config
+  (nkl/leader-key
+   "h"		'(:ignore t		:wk "[H]elpful")
+   "h f"	'(helpful-callable	:wk "[H]elpful [F]unction")
+   "h k"	'(helpful-key		:wk "[H]elpful [K]ey")
+   "h o"	'(helpful-symbol	:wk "[H]elpful Symb[O]l")
+   "h v"	'(helpful-variable	:wk "[H]elpful [V]ariable")
+   "h x"	'(helpful-command       :wk "[H]elpful [C]ommand")))
 #+end_src
 ** ~evil-mode~
 I need =vi= like keybinds
