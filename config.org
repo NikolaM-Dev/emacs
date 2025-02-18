@@ -21,6 +21,12 @@
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
 #+end_src
+** Which Key
+#+begin_src emacs-lisp
+(use-package which-key
+  :config
+  (which-key-mode 1))
+#+end_src
 ** General
 #+begin_src emacs-lisp
 (use-package general
@@ -31,8 +37,8 @@
     :prefix "SPC"
     :global-prefix "M-SPC")
 
-  (nkl/leader-keys
-   "u" '(universal-argument :wk "[U]niversal Argument")))
+  (nkl/leader-key "u" '(universal-argument :wk "[U]niversal Argument")))
+#+end_src
 #+end_src
 ** ~evil-mode~
 I need =vi= like keybinds
@@ -73,12 +79,6 @@ I need =vi= like keybinds
   :after evil
   :config
   (evil-collection-init))
-#+end_src
-** Which Key
-#+begin_src emacs-lisp
-(use-package which-key
-  :config
-  (which-key-mode))
 #+end_src
 ** Try
 #+begin_src emacs-lisp
