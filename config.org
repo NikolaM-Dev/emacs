@@ -51,6 +51,10 @@
    "h v"	'(helpful-variable	:wk "[H]elpful [V]ariable")
    "h x"	'(helpful-command       :wk "[H]elpful [C]ommand")))
 #+end_src
+** Try
+#+begin_src emacs-lisp
+(use-package try)
+#+end_src
 ** ~evil-mode~
 I need =vi= like keybinds
 *** Custom split functions
@@ -90,10 +94,6 @@ I need =vi= like keybinds
   :after evil
   :config
   (evil-collection-init))
-#+end_src
-** Try
-#+begin_src emacs-lisp
-(use-package try)
 #+end_src
 * Options
 ** Autopairs
