@@ -142,14 +142,14 @@ I need =vi= like keybinds
 #+begin_src emacs-lisp
 (global-set-key [remap list-buffers] 'ibuffer)
 #+end_src
-** Emacs lisp
-*** Rainbow delimiters
+* Emacs lisp
+** Rainbow delimiters
 #+begin_src emacs-lisp
 (use-package rainbow-delimiters
   :hook (emacs-lisp-mode . rainbow-delimiters-mode))
 #+end_src
-** 🦄 Org
-*** Tempo
+* 🦄 Org
+** Tempo
 #+begin_src emacs-lisp
 (require 'org-tempo)
 #+end_src
