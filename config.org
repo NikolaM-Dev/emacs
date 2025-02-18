@@ -21,6 +21,19 @@
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
 #+end_src
+** General
+#+begin_src emacs-lisp
+(use-package general
+  :config
+  (general-create-definer nkl/leader-key
+    :states '(normal insert visual emacs)
+    :keymaps 'override
+    :prefix "SPC"
+    :global-prefix "M-SPC")
+
+  (nkl/leader-keys
+   "u" '(universal-argument :wk "[U]niversal Argument")))
+#+end_src
 ** ~evil-mode~
 I need =vi= like keybinds
 *** Custom split functions
