@@ -86,7 +86,7 @@ I need =vi= like keybinds
 #+end_src
 ** Line numbers
 #+begin_src emacs-lisp
-(global-display-line-numbers-mode t)
+(global-display-line-numbers-mode 1)
 #+end_src
 ** Short answers
 #+begin_src emacs-lisp
@@ -191,7 +191,7 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (use-package org-superstar
   :config
-  (setq org-hide-leading-stars t)
+  (setq org-hide-leading-stars 1)
   (add-hook 'org-mode-hook 'org-superstar-mode))
 #+end_src
 *** TODO Add that ~TAB~ works like in ~emacs-mode~
