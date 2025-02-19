@@ -55,10 +55,10 @@
 #+begin_src emacs-lisp
 (use-package try)
 #+end_src
-** ~evil-mode~
+* Evil
 I need =vi= like keybinds
-*** Custom split functions
-**** window split
+** Custom split functions
+*** window split
 #+begin_src emacs-lisp
 (defun nkl/window-split ()
   (interactive)
@@ -74,7 +74,7 @@ I need =vi= like keybinds
   (balance-windows)
   (other-window 1))
 #+end_src
-*** Setup
+** Setup
 #+begin_src emacs-lisp
 (use-package evil
   :init
@@ -88,7 +88,7 @@ I need =vi= like keybinds
 
   (evil-mode 1))
 #+end_src
-*** ~evil-collection~
+** ~evil-collection~
 #+begin_src emacs-lisp
 (use-package evil-collection
   :after evil
