@@ -1,8 +1,8 @@
-#+title: Nikola's Emacs configuration
 :properties:
 #+author: NikolaM-Dev (Juan David Merchan Torres)
 #+startup: show2levels
 :end:
+#+title: Nikola's GNU Emacs configuration
 
 * Core
 ** ~package.el~
