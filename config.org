@@ -173,16 +173,14 @@ I need =vi= like keybinds
   :hook (emacs-lisp-mode . rainbow-delimiters-mode))
 #+end_src
 * 🦄 Org
-** Custom functions
-#+begin_src emacs-lisp
-(defun nkl/on-org-mode ()
-		 (org-indent-mode 1)
-		 (setq evil-auto-indent -1)
-		 (visual-line-mode 1))
-#+end_src
 ** Setup
 #+begin_src emacs-lisp
 (use-package org
+  :preface
+  (defun nkl/on-org-mode ()
+    (org-indent-mode 1)
+    (setq evil-auto-indent -1)
+    (visual-line-mode 1))
   :hook
   (nkl/on-org-mode)
   :config
