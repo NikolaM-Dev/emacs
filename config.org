@@ -5,7 +5,7 @@
 #+title: Nikola's GNU Emacs configuration
 
 * Core
-** ~package.el~
+** =package.el=
 #+begin_src emacs-lisp
 (require 'package)
 
@@ -16,7 +16,7 @@
 (unless package-archive-contents
   (package-refresh-contents))
 #+end_src
-** ~use-package~
+** =use-package=
 #+begin_src emacs-lisp
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
@@ -66,7 +66,7 @@ I need =vi= like keybinds
   (balance-windows)
   (other-window 1))
 #+end_src
-**** window vsplitv
+*** window vsplitv
 #+begin_src emacs-lisp
 (defun nkl/window-vsplit ()
   (interactive)
