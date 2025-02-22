@@ -243,6 +243,10 @@ Set src blocks automatic indent to ~0~ instead of ~1~
  '(org-level-6 ((t (:inherit outline-5 :height 1.05))))
  '(org-level-7 ((t (:inherit outline-5 :height 1)))))
 #+end_src
+** Edit source blocks in full screen
+#+begin_src emacs-lisp
+(setq org-src-window-setup 'current-window)
+#+end_src
 #+end_src
 * UI
 ** Theme
