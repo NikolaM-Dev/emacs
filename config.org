@@ -182,7 +182,7 @@ I need =vi= like keybinds
     (setq evil-auto-indent -1)
     (visual-line-mode 1))
   :hook
-  (nkl/on-org-mode)
+  (org-mode . nkl/on-org-mode)
   :config
   (setq org-ellipsis "…")  ; ⤵ ▼ ⬎ …  
 #+end_src
