@@ -149,6 +149,10 @@ I need =vi= like keybinds
 ** Magit
 #+begin_src emacs-lisp
 (use-package magit
+  :config
+  (nkl/leader-key
+    "g"		'(:ignore t	:wk "[G]it")
+    "g s"	'(magit-status	:wk "Ma[G]it [S]tatus")))
 #+end_src
 ** Edit config
 #+begin_src emacs-lisp
