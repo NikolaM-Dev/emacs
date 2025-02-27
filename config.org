@@ -364,4 +364,19 @@ Set src blocks automatic indent to ~0~ instead of ~1~
     (let ((list-item (nth position (nkl/harpoon-list-get))))
       (when list-item
 	(find-file (file-truename list-item))))))
+
+(nkl/leader-key
+  "h"	'(:ignore t						:wk "[H]arpoon")
+  "h e"	'(nkl/harpoon-list-edit					:wk "[H]arpoon [E]dit List")
+  "h a"	'(nkl/harpoon-list-add					:wk "[H]arpoon [A]dd File to List")
+  "1"	'((lambda () (interactive) (nkl/harpoon-go-to 1))	:wk "Go to Harpoon item at position [1]")
+  "2"	'((lambda () (interactive) (nkl/harpoon-go-to 2))	:wk "Go to Harpoon item at position [2]")
+  "3"	'((lambda () (interactive) (nkl/harpoon-go-to 3))	:wk "Go to Harpoon item at position [3]")
+  "4"	'((lambda () (interactive) (nkl/harpoon-go-to 4))	:wk "Go to Harpoon item at position [4]")
+  "5"	'((lambda () (interactive) (nkl/harpoon-go-to 5))	:wk "Go to Harpoon item at position [5]")
+  "6"	'((lambda () (interactive) (nkl/harpoon-go-to 6))	:wk "Go to Harpoon item at position [6]")
+  "7"	'((lambda () (interactive) (nkl/harpoon-go-to 7))	:wk "Go to Harpoon item at position [7]")
+  "8"	'((lambda () (interactive) (nkl/harpoon-go-to 8))	:wk "Go to Harpoon item at position [8]")
+  "9"	'((lambda () (interactive) (nkl/harpoon-go-to 9))	:wk "Go to Harpoon item at position [9]")
+  "0"	'((lambda () (interactive) (nkl/harpoon-go-to 10))	:wk "Go to Harpoon item at position [10]"))
 #+end_src
