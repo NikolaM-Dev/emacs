@@ -104,6 +104,10 @@
 #+begin_src emacs-lisp
 (savehist-mode)
 #+end_src
+** Use one space to end sentences
+#+begin_src emacs-lisp
+(setq sentence-end-double-space nil)
+#+end_src
 * Keymaps
 ** Config
 #+begin_src emacs-lisp
