@@ -1,12 +1,16 @@
 :properties:
 #+startup: show3levels
 :end:
-#+title: Emacs Roadmap
+#+title: Roadmap
 
-* PROJ Emacs Roadmap [5/9] [55%]
+* PROJ Emacs Roadmap [6/11] [54%]
+** TODO Add todos up, not down
+** TODO Change themes keymap
+** TODO Remove tempo call, use yasnippets instead
+** TODO Org-Roam
+** TODO Org todo keywords
 ** DONE Commit Changes
 CLOSED: [2025-02-27 Thu 15:48] DEADLINE: <2025-02-27 Thu 14:20>
-** TODO Add todos up, not down
 ** DONE Trim white space
 CLOSED: [2025-02-27 Thu 15:56] DEADLINE: <2025-03-16 Sun>
 ** DONE Sort lines keymap
@@ -14,10 +18,8 @@ CLOSED: [2025-02-27 Thu 15:58] DEADLINE: <2025-02-27 Thu 16:00>
 ** DONE How to load theme without override colors
 CLOSED: [2025-02-27 Thu 16:20] DEADLINE: <2025-02-27 Thu 16:15>
 Review jake config
-** TODO Change themes keymap
-** TODO Remove tempo call, use yasnippets instead
-** TODO Org-Roam
-** TODO Org todo keywords
+** DONE Add more magit keymaps
+CLOSED: [2025-02-27 Thu 16:35] DEADLINE: <2025-02-27 Thu 16:40>
 ** DONE Old
 CLOSED: [2025-02-27 Thu 14:10]
 - [X] Emacs Playlist from Uncle Dave
