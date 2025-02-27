@@ -319,30 +319,21 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+end_src
 #+end_src
 * UI
-** Theme
-*** Dream
+** Themes
+*** EF Themes
 #+begin_src emacs-lisp
-(use-package ef-themes
-  :config
-  (load-theme 'ef-dream t))
+(use-package ef-themes)
 #+end_src
-*** OKSolar
+*** Doom Themes
 #+begin_src emacs-lisp
 (use-package doom-themes
   :config
   (setq doom-themes-enable-bold t)	; if nil, bold is universally disabled
-  (setq doom-themes-enable-italic t)	; if nil, italics is universally disabled
-                                        ;(load-theme 'doom-oksolar-dark t)
-  )
+  (setq doom-themes-enable-italic t))	; if nil, italics is universally disabled
 #+end_src
-*** Solarized
+*** Default Theme
 #+begin_src emacs-lisp
-(use-package doom-themes
-  :config
-  (setq doom-themes-enable-bold t)	; if nil, bold is universally disabled
-  (setq doom-themes-enable-italic t)	; if nil, italics is universally disabled
-  ;;(load-theme 'doom-solarized-dark t)
-  )
+(nkl/load-theme 'ef-dream)
 #+end_src
 ** Fonts
 #+begin_src emacs-lisp
