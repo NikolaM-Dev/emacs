@@ -2,8 +2,14 @@
 elpa
 
 # data files
+.org-id-locations
+auto-save-list
 bookmarks
+config.el
+eln-cache
 history
 places
 projects
 recentf
+transient
+
