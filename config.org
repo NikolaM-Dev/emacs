@@ -457,3 +457,9 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 (defalias 'nkl/macro-verbatim
    (kmacro "c i w = = <escape> P"))
 #+end_src
+* Trim White Spaces
+#+begin_src emacs-lisp
+(setq-default require-final-newline t)
+(setq-default show-trailing-whitespace t)
+(add-hook 'before-save-hook 'whitespace-cleanup)
+#+end_src
