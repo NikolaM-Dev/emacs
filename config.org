@@ -170,6 +170,7 @@
   :preface
   (defun nkl/on-org-mode ()
     (setq evil-auto-indent -1)
+    (setq fill-column 80)
 
     (auto-fill-mode)
     (org-indent-mode 1)
