@@ -127,6 +127,15 @@
   "i"	'(:ignore t	:wk "[I]ndent")
   "i r"	'(indent-region	:wk "[I]ndent [R]egion"))
 #+end_src
+** Save buffer
+#+begin_src emacs-lisp
+(defun nkl/save-buffer ()
+  (interactive)
+  (save-buffer)
+  (evil-force-normal-state))
+
+(general-define-key "C-s" 'nkl/save-buffer)
+#+end_src
 * Git
 ** Magit
 #+begin_src emacs-lisp
