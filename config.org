@@ -136,6 +136,10 @@
 
 (general-define-key "C-s" 'nkl/save-buffer)
 #+end_src
+** Global escape
+#+begin_src emacs-lisp
+(general-define-key "<escape>" 'keyboard-escape-quit)
+#+end_src
 * Git
 ** Magit
 #+begin_src emacs-lisp
