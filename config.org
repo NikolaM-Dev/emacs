@@ -299,6 +299,16 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (setq initial-scratch-message nil)
 #+end_src
+** Zen mode
+#+begin_src emacs-lisp
+(use-package perfect-margin
+  :config
+  (setq perfect-margin-visible-width 100)
+
+  (nkl/leader-key
+    "z"		'(:ignore t	:wk "[Z]en")
+    "z m"	'(perfect-margin-mode	:wk "Toggle [Z]en [M]ode")))
+#+end_src
 ** Highlight current cursor position
 #+begin_src emacs-lisp
 (global-hl-line-mode)
