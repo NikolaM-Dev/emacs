@@ -3,7 +3,11 @@
 :end:
 #+title: Emacs Roadmap
 
-* PROJ Emacs Roadmap [4/4] [100%]
+* PROJ Emacs Roadmap [1/7] [14%]
+** TODO Commit Changes
+DEADLINE: <2025-02-27 Thu 14:20>
+** DONE Old
+CLOSED: [2025-02-27 Thu 14:10]
 - [X] Emacs Playlist from Uncle Dave
 - [X] Org mode Playlist from Uncle Dave
 - [X] Review jvscholz setup
@@ -11,8 +15,8 @@
   - [X] [[https://www.youtube.com/watch?v=X_iX5US1_xE&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with DT]]
   - [X] [[https://www.youtube.com/watch?v=_zfvQkJsYwI&t=105s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with SC]]
   - [X] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
- 
-* TODO 🗃️ Backlog [0/15] [0%]
+
+* TODO 🗃️ Backlog [0/16] [0%]
 - [ ] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
 - [ ] Format and proccess the text below
   #+begin_example text
