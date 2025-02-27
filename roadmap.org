@@ -1,0 +1,57 @@
+:properties:
+#+startup: show3levels
+:end:
+#+title: Emacs Roadmap
+
+* PROJ Emacs Roadmap [4/4] [100%]
+- [X] Emacs Playlist from Uncle Dave
+- [X] Org mode Playlist from Uncle Dave
+- [X] Review jvscholz setup
+- [X] Magit
+  - [X] [[https://www.youtube.com/watch?v=X_iX5US1_xE&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with DT]]
+  - [X] [[https://www.youtube.com/watch?v=_zfvQkJsYwI&t=105s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with SC]]
+  - [X] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
+ 
+* TODO 🗃️ Backlog [0/15] [0%]
+- [ ] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
+- [ ] Format and proccess the text below
+  #+begin_example text
+  resources i used to install and configure:
+  (https://github.com/doomemacs/doomemac...)
+
+  don't blindly follow everything on this guide, one specific point i had to do myself was making emacs start as an application, but im sure you can figure that out too, just a file path change. it's also pretty difficult to get to work with spotlight and alfred from what i found but possible with loopholes.
+
+  (https://github.com/jvscholz/dotfiles/...)
+
+  a very good start (from james), if you wanna copy stuff it helps if you can understand everything you reuse.
+
+  (https://docs.doomemacs.org/latest/)
+
+  wiki
+
+  (https://www.orgroam.com/manual.html)
+
+  org roam
+
+  (  / doomemacs  )
+
+  subreddit
+  https://github.com/joshpetit
+  github - orglzy-android
+  https://www.youtube.com/watch?v=grbtRhFiPrw&list=TLPQMTUwMjIwMjW2H2cDBwg-6Q&index=3
+  https://github.com/jvscholz/dotfiles
+  https://emacs.stackexchange.com/questions/2571/what-emacs-communities-exist
+  #+end_example
+- [ ] ~org-roam-ui-mode~ is basically the way to get obsidian
+- [ ] [[https://www.youtube.com/watch?v=d1fgypEiQkE&list=PL5--8gKSku15e8lXf7aLICFmAHQVo0KXX][Configuring Emacs - DT]]
+- [ ] [[https://www.youtube.com/watch?v=emwLL-AyTLE&list=PL5--8gKSku15uYCnmxWPO17Dq6hVabAB4][The Church of Emacs - DT]]
+- [ ] [[https://www.youtube.com/watch?v=OaF-N-FuGtc&list=PLEoMzSkcN8oNmd98m_6FoaJseUsa6QGm2&pp=iAQB][Emacs from scratch (New) - Systems Crafters]]
+- [ ] [[https://www.youtube.com/watch?v=48JlgiBpw_I&list=PLEoMzSkcN8oPZvSdewHG8uApD7THlLLCV&pp=iAQB][Emacs Essentials - Systems Crafters]]
+- [ ] [[https://www.youtube.com/watch?v=JbHE819kVGQ&list=PLEoMzSkcN8oMLvSeez5K1N7AzEOkLklao&pp=iAQB][Emacs Has a Built-in Pomodoro Timer?? - Systems Crafters]]
+- [ ] [[https://www.youtube.com/watch?v=f7xB2fFk1tQ&list=PLEoMzSkcN8oNPbEMYEtswOVTvq7CVddCS&pp=iAQB][Emacs Desktop Environment - Systems Crafters]]
+- [ ] [[https://www.youtube.com/watch?v=E-NAM9U5JYE&list=PLEoMzSkcN8oNvsrtk_iZSb94krGRofFjN&pp=iAQB][Emacs IDE - Systems Crafters]]
+- [ ] [[https://www.youtube.com/watch?v=wKTKmE1wLyw&list=PLEoMzSkcN8oMHJ6Xil1YdnYtlWd5hHZql&pp=iAQB][Emacs Tips - System Crafters]]
+- [ ] [[https://www.youtube.com/watch?v=AfkrzFodoNw&list=PLEoMzSkcN8oNBsVT7h2Fyt4oTABckSv8j&pp=iAQB][Publishing websites with org mode - Systems Crafters]]
+- [ ] [[https://www.youtube.com/watch?v=RQK_DaaX34Q&list=PLEoMzSkcN8oPQtn7FQEF3D7sroZbXuPZ7&pp=iAQB][Learning Emacs Lisp - System Crafters]]
+- [ ] [[https://www.youtube.com/watch?v=yZRyEhi4y44&list=PLEoMzSkcN8oM-kA19xOQc8s0gr0PpFGJQ&pp=iAQB][Emacs Mail - Systems Crafters]]
+- [ ] [[https://www.youtube.com/watch?v=uyMdDzjQFMU&list=PLEoMzSkcN8oOP5WgckTbERn10CXxIFneB&pp=iAQB][Effective window management in emacs - Systems Crafters]]
