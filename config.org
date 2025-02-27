@@ -165,8 +165,10 @@
 (use-package org
   :preface
   (defun nkl/on-org-mode ()
-    (org-indent-mode 1)
     (setq evil-auto-indent -1)
+
+    (auto-fill-mode)
+    (org-indent-mode 1)
     (visual-line-mode 1))
   :hook
   (org-mode . nkl/on-org-mode)
