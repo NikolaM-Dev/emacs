@@ -3,15 +3,18 @@
 :end:
 #+title: Emacs Roadmap
 
-* PROJ Emacs Roadmap [2/9] [22%]
+* PROJ Emacs Roadmap [5/9] [55%]
 ** DONE Commit Changes
 CLOSED: [2025-02-27 Thu 15:48] DEADLINE: <2025-02-27 Thu 14:20>
 ** TODO Add todos up, not down
-** TODO Trim white space
-DEADLINE: <2025-03-16 Sun>
-** TODO Sort lines keymap
-** TODO View how to have multiple themes
+** DONE Trim white space
+CLOSED: [2025-02-27 Thu 15:56] DEADLINE: <2025-03-16 Sun>
+** DONE Sort lines keymap
+CLOSED: [2025-02-27 Thu 15:58] DEADLINE: <2025-02-27 Thu 16:00>
+** DONE How to load theme without override colors
+CLOSED: [2025-02-27 Thu 16:20] DEADLINE: <2025-02-27 Thu 16:15>
 Review jake config
+** TODO Change themes keymap
 ** TODO Remove tempo call, use yasnippets instead
 ** TODO Org-Roam
 ** TODO Org todo keywords
@@ -29,7 +32,7 @@ CLOSED: [2025-02-27 Thu 14:10]
 * 🤤 Configs
 - https://www.youtube.com/@YisraelDovL/videos
 - https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/emacs/config.org?ref_type=heads
-- https://github.com/jakebox/jake-emacs/blob/main/jake-emacs/init.org?plain=1
+- https://github.com/jakebox/jake-emacs/blob/main/jake-emacs/init.org
 - https://github.com/daviwil/dotfiles/blob/master/.archive/Emacs.org
 - https://github.com/noctuid/general.el#override-keymaps-and-buffer-local-keybindings
 - https://github.com/daedreth/UncleDavesEmacs/blob/master/config.org
