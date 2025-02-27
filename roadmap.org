@@ -3,15 +3,17 @@
 :end:
 #+title: Emacs Roadmap
 
-* PROJ Emacs Roadmap [1/7] [14%]
-** TODO Commit Changes
-DEADLINE: <2025-02-27 Thu 14:20>
+* PROJ Emacs Roadmap [2/9] [22%]
+** DONE Commit Changes
+CLOSED: [2025-02-27 Thu 15:48] DEADLINE: <2025-02-27 Thu 14:20>
 ** TODO Add todos up, not down
 ** TODO Trim white space
 ** TODO Sort lines keymap
 ** TODO View how to have multiple themes
 Review jake config
 ** TODO Remove tempo call, use yasnippets instead
+** TODO Org-Roam
+** TODO Org todo keywords
 ** DONE Old
 CLOSED: [2025-02-27 Thu 14:10]
 - [X] Emacs Playlist from Uncle Dave
