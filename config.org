@@ -140,6 +140,10 @@
 #+begin_src emacs-lisp
 (general-define-key "<escape>" 'keyboard-escape-quit)
 #+end_src
+** Remap =list-buffers= keymap to =ibuffer=
+#+begin_src emacs-lisp
+(general-define-key [remap list-buffers] 'ibuffer)
+#+end_src
 * Git
 ** Magit
 #+begin_src emacs-lisp
