@@ -31,34 +31,6 @@ CLOSED: [2025-02-27 Thu 14:10]
   - [X] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
 
 
-* 🤤 Configs
-- https://www.youtube.com/@YisraelDovL/videos
-- https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/emacs/config.org?ref_type=heads
-- https://github.com/jakebox/jake-emacs/blob/main/jake-emacs/init.org
-- https://github.com/daviwil/dotfiles/blob/master/.archive/Emacs.org
-- https://github.com/noctuid/general.el#override-keymaps-and-buffer-local-keybindings
-- https://github.com/daedreth/UncleDavesEmacs/blob/master/config.org
-- https://github.com/anschwa/emacs.d
-- https://github.com/protesilaos/dotfiles/blob/master/emacs/.emacs.d/prot-emacs.org
-- https://github.com/hrs/dotfiles/blob/main/emacs/.config/emacs/configuration.org?plain=1#configure-use-package
-- https://gitlab.com/daniel.arnqvist/emacs-config/-/blob/master/init.el?ref_type=heads
-- https://github.com/jwiegley/use-package?tab=readme-ov-file#conditional-loading-before-preface
-- https://github.com/ahyatt/emacs-setup/blob/master/.emacs.d/emacs.org
-
-* 📁 Emacs resources
-- https://github.com/dmgerman/yt-playlist
-- https://www.reddit.com/r/emacs/comments/189r48p/how_to_learn_emacs/
-- https://lucidmanager.org/categories/
-- https://www.youtube.com/watch?v=OaF-N-FuGtc&list=PLEoMzSkcN8oNmd98m_6FoaJseUsa6QGm2
-- https://www.youtube.com/watch?v=48JlgiBpw_I&list=PLEoMzSkcN8oPZvSdewHG8uApD7THlLLCV
-- https://github.com/cyrus-and/zoom
-- https://www.reddit.com/r/emacs/comments/np6ey4/how_packageel_works_with_use_package/
-- https://www.reddit.com/r/emacs/comments/t66hue/what_does_setq_packageenableatstartup_nil/
-- https://github.com/lccambiaghi
-- https://github.com/ikoamu/publish-org-roam-ui
-- https://www.reddit.com/r/OrgRoam/comments/1ggb5r4/obsidian_dataview_functionality_unlocked/
-- https://michaelneuper.com/posts/
-
 * TODO 🗃️ Backlog [0/16] [0%]
 - [ ] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
 - [ ] Format and proccess the text below
@@ -111,3 +83,150 @@ CLOSED: [2025-02-27 Thu 14:10]
 
   (global-set-key (kbd "C-c r") 'nkl/reload-config) ; [C]onfig [R]eload
   #+end_src
+
+* 🤤 Configs
+- https://www.youtube.com/@YisraelDovL/videos
+- https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/emacs/config.org?ref_type=heads
+- https://github.com/jakebox/jake-emacs/blob/main/jake-emacs/init.org
+- https://github.com/daviwil/dotfiles/blob/master/.archive/Emacs.org
+- https://github.com/noctuid/general.el#override-keymaps-and-buffer-local-keybindings
+- https://github.com/daedreth/UncleDavesEmacs/blob/master/config.org
+- https://github.com/anschwa/emacs.d
+- https://github.com/protesilaos/dotfiles/blob/master/emacs/.emacs.d/prot-emacs.org
+- https://github.com/hrs/dotfiles/blob/main/emacs/.config/emacs/configuration.org?plain=1#configure-use-package
+- https://gitlab.com/daniel.arnqvist/emacs-config/-/blob/master/init.el?ref_type=heads
+- https://github.com/jwiegley/use-package?tab=readme-ov-file#conditional-loading-before-preface
+- https://github.com/ahyatt/emacs-setup/blob/master/.emacs.d/emacs.org
+
+* 📁 Emacs resources
+- https://github.com/dmgerman/yt-playlist
+- https://www.reddit.com/r/emacs/comments/189r48p/how_to_learn_emacs/
+- https://lucidmanager.org/categories/
+- https://www.youtube.com/watch?v=OaF-N-FuGtc&list=PLEoMzSkcN8oNmd98m_6FoaJseUsa6QGm2
+- https://www.youtube.com/watch?v=48JlgiBpw_I&list=PLEoMzSkcN8oPZvSdewHG8uApD7THlLLCV
+- https://github.com/cyrus-and/zoom
+- https://www.reddit.com/r/emacs/comments/np6ey4/how_packageel_works_with_use_package/
+- https://www.reddit.com/r/emacs/comments/t66hue/what_does_setq_packageenableatstartup_nil/
+- https://github.com/lccambiaghi
+- https://github.com/ikoamu/publish-org-roam-ui
+- https://www.reddit.com/r/OrgRoam/comments/1ggb5r4/obsidian_dataview_functionality_unlocked/
+- https://michaelneuper.com/posts/
+
+* Interesting configs
+** Full scren by default
+#+begin_src emacs-lisp
+(toggle-frame-fullscreen)
+#+end_src
+** Avoid emacs hurts your ears
+#+begin_src  emacs-lisp
+(setq visible-bell t)
+#+end_src
+** Another way for ~ring-bell~
+#+begin_src emacs-lisp
+(setq ring-bell-function 'ignore)
+#+end_src
+** Command to toggle the display of the mode-line as a header
+From [[https://bzg.fr/en/emacs-strip-tease][Emacs Naked]]
+#+begin_src emacs-lisp
+(defvar-local header-line-format nil)
+(defun mode-line-in-header ()
+  (interactive)
+  (if (not header-line-format)
+      (setq header-line-format mode-line-format
+            mode-line-format nil)
+    (setq mode-line-format header-line-format
+          header-line-format nil))
+  (set-window-buffer nil (current-buffer)))
+(global-set-key (kbd "C-s-SPC") 'mode-line-in-header)
+(mode-line-in-header)
+#+end_src
+** Launch ~ansi-term~ like in WM
+#+begin_src emacs-lisp
+(global-set-key (kbd "<s-return>") 'ansi-term)
+#+end_src
+** Scroll like in Neovim
+Just one step a time
+#+begin_src emacs-lisp
+(setq scroll-conservavility 100)
+#+end_src
+** Interesting routes
+#+begin_src emacs-lisp
+(find-file (expand-file-name "~/w/1-projects/mastering-emacs.org" ))
+#+end_src
+** Idk what is the following line
+#+begin_src emacs-lisp
+(setq package-enable-at-startup nil)
+#+end_src
+** Add pretty symbols
+#+begin_src emacs-lisp
+(global-prettify-symbols-mode 1)
+#+end_src
+** Edit org src blocks in full screen
+#+begin_src emacs-lisp
+(setq org-src-window-setup 'current-window)
+#+end_src
+** Kill current buffer always
+- [[https://youtu.be/crDdqZWgZw8?list=PLX2044Ew-UVVv31a0-Qn3dA6Sd_-NyA1n&t=152][Kill current buffer always by Uncle Dave]]
+** Kill all buffers
+- [[https://youtu.be/crDdqZWgZw8?list=PLX2044Ew-UVVv31a0-Qn3dA6Sd_-NyA1n&t=550][Kill all buffers by Uncle Dave]]
+** Subword
+- Review notes
+** Setup datetime in mode line
+#+begin_src emacs-lisp
+(setq display-time-24hr-format t) ; use 24h format
+(display-time-mode)
+#+end_src
+** How to save a macro
+- ~M-x name-last-kbd-macro RET macro_name RET~
+- Right now you can call the macro with ~M-x macro_name RET~
+- To save it you use ~M-x insert-kbd-macro RET macro_name RET~ and put the result in your config
+** Interesting packages and things
+- avy
+- rainbow-mode
+- switch-window
+- sudo-edit
+- popup-kill-ring
+- YA Snippets
+- occur
+- follow-mode
+- swiper
+- mark-multiple
+- expand region
+- pretty-mode
+- forge
+- magit todos
+** From commets
+- In dired I use the a key, which opens without keeping previous.
+- For deleting a previous ‘dired’ buffer in your ‘.emacs’ put a ‘(put 'dired-find-alternate-file 'disabled nil)’ and hit ‘a’ in ‘dired’.
+- Why not use the :bind macro for binding the swiper key ? Also if you are using swiper you can use IVY to edit files as root.  `counsel-find-file` `M-o` then you get a menu where you can choose to edit as root.
+- for editing with sudo, you can use tramp: C-x C-f RET /sudo:localhost:/etc/pacman.conf
+- to edit as root after CxCf /sudo::<path to root restricted file you want to edit>
+** Visual line mode, to make like trunkate lines???
+#+begin_src emacs-lisp
+(visual-line-mode)
+#+end_src
+** Setup ORG agenda
+#+begin_src emacs-lisp
+(setq org-agenda-files (append
+                        (file-expand-wildcards "~/path1/")
+                        (file-expand-wildcards "~/path2/")))
+#+end_src
+** Pomodoro with ORG
+- ~M-x org-timer-set-timer~
+  #+begin_src emacs-lisp
+  ;; Setup clock sound
+  (setq org-clock-sound "~/path")
+  #+end_src
+** Replace in VIM
+- =To ask for confirmation each time add 'c'           :%s/old/new/gc=
+** EKG
+- https://github.com/ahyatt/ekg
+- https://github.com/ahyatt/emacs-setup
+** ~file-truename~
+Note that the file-truename function is only necessary when you use
+symbolic link to org-roam-directory. Org-roam won't automatically
+resolve symbolic link to the directory.
+** ROAM stuffs
+- ~(setq org-roam-node-display-template "${directories:10} ${tags:10} ${title:100} ${backlinkscount:6}")~
+- ~(file "~path/")~ to avoid use template strings and instead use a proper org file as a template
+- ~(setq org-roam-dailies-directory "journal/")~ the path is realtive to roam dir
