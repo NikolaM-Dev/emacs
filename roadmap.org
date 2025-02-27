@@ -8,6 +8,7 @@
 CLOSED: [2025-02-27 Thu 15:48] DEADLINE: <2025-02-27 Thu 14:20>
 ** TODO Add todos up, not down
 ** TODO Trim white space
+DEADLINE: <2025-03-16 Sun>
 ** TODO Sort lines keymap
 ** TODO View how to have multiple themes
 Review jake config
@@ -23,8 +24,8 @@ CLOSED: [2025-02-27 Thu 14:10]
   - [X] [[https://www.youtube.com/watch?v=X_iX5US1_xE&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with DT]]
   - [X] [[https://www.youtube.com/watch?v=_zfvQkJsYwI&t=105s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with SC]]
   - [X] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
-    
-    
+
+
 * 🤤 Configs
 - https://www.youtube.com/@YisraelDovL/videos
 - https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/emacs/config.org?ref_type=heads
@@ -38,7 +39,7 @@ CLOSED: [2025-02-27 Thu 14:10]
 - https://gitlab.com/daniel.arnqvist/emacs-config/-/blob/master/init.el?ref_type=heads
 - https://github.com/jwiegley/use-package?tab=readme-ov-file#conditional-loading-before-preface
 - https://github.com/ahyatt/emacs-setup/blob/master/.emacs.d/emacs.org
-  
+
 * 📁 Emacs resources
 - https://github.com/dmgerman/yt-playlist
 - https://www.reddit.com/r/emacs/comments/189r48p/how_to_learn_emacs/
@@ -105,4 +106,3 @@ CLOSED: [2025-02-27 Thu 14:10]
 
   (global-set-key (kbd "C-c r") 'nkl/reload-config) ; [C]onfig [R]eload
   #+end_src
-
