@@ -73,3 +73,13 @@ CLOSED: [2025-02-27 Thu 14:10]
 - [ ] [[https://www.youtube.com/watch?v=RQK_DaaX34Q&list=PLEoMzSkcN8oPQtn7FQEF3D7sroZbXuPZ7&pp=iAQB][Learning Emacs Lisp - System Crafters]]
 - [ ] [[https://www.youtube.com/watch?v=yZRyEhi4y44&list=PLEoMzSkcN8oM-kA19xOQc8s0gr0PpFGJQ&pp=iAQB][Emacs Mail - Systems Crafters]]
 - [ ] [[https://www.youtube.com/watch?v=uyMdDzjQFMU&list=PLEoMzSkcN8oOP5WgckTbERn10CXxIFneB&pp=iAQB][Effective window management in emacs - Systems Crafters]]
+- [ ] Update config
+  #+begin_src emacs-lisp
+  (defun nkl/reload-config ()
+    (interactive)
+    (org-babel-load-file
+     (expand-file-name "config.org" user-emacs-directory)))
+
+  (global-set-key (kbd "C-c r") 'nkl/reload-config) ; [C]onfig [R]eload
+  #+end_src
+
