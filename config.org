@@ -226,6 +226,8 @@
   :config
   (nkl/leader-key
     "g"		'(:ignore t	:wk "[G]it")
+    "g c"	'(magit-commit	:wk "Ma[G]it [C]ommit")
+    "g l"	'(magit-log	:wk "Ma[G]it [L]og")
     "g s"	'(magit-status	:wk "Ma[G]it [S]tatus")))
 #+end_src
 * Emacs lisp
