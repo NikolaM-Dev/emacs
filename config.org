@@ -153,19 +153,6 @@
     "g"		'(:ignore t	:wk "[G]it")
     "g s"	'(magit-status	:wk "Ma[G]it [S]tatus")))
 #+end_src
-** Update config
-#+begin_src emacs-lisp
-(defun nkl/reload-config ()
-  (interactive)
-  (org-babel-load-file
-   (expand-file-name "config.org" user-emacs-directory)))
-
-(global-set-key (kbd "C-c r") 'nkl/reload-config) ; [C]onfig [R]eload
-#+end_src
-** Remap ~list-buffers~ keymap to ~ibuffer~
-#+begin_src emacs-lisp
-(global-set-key [remap list-buffers] 'ibuffer)
-#+end_src
 * Emacs lisp
 ** Rainbow delimiters
 #+begin_src emacs-lisp
