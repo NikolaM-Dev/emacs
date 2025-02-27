@@ -105,6 +105,16 @@
 (savehist-mode)
 #+end_src
 * Keybinds
+** Config
+#+begin_src emacs-lisp
+(defun nkl/config-edit ()
+  (interactive)
+  (find-file (expand-file-name "config.org" user-emacs-directory)))
+
+(nkl/leader-key
+  "c"	'(:ignore t		:wk "[C]onfig")
+  "c e"	'(nkl/config-edit	:wk "[C]onfig [E]edit"))
+#+end_src
 * Git
 ** Magit
 #+begin_src emacs-lisp
