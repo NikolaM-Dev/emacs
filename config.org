@@ -401,3 +401,9 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   "9"	'((lambda () (interactive) (nkl/harpoon-go-to 9))	:wk "Go to Harpoon item at position [9]")
   "0"	'((lambda () (interactive) (nkl/harpoon-go-to 10))	:wk "Go to Harpoon item at position [10]"))
 #+end_src
+* Macros
+** Verbatium
+#+begin_src emacs-lisp
+(defalias 'nkl/macro-verbatium
+   (kmacro "c i w = = <escape> P"))
+#+end_src
