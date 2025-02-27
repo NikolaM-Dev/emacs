@@ -177,6 +177,10 @@
   (setq org-log-done 'time)
   (setq org-agenda-files (list
 			  (expand-file-name "roadmap.org" user-emacs-directory)))
+
+  (nkl/leader-key
+    "n"		'(:ignore t	:wk "[N]otes")
+    "n A"	'(org-agenda	:wk "Org [A]genda")))
 #+end_src
 ** Tempo
 #+begin_src emacs-lisp
