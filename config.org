@@ -104,7 +104,7 @@
 #+begin_src emacs-lisp
 (savehist-mode)
 #+end_src
-* Keybinds
+* Keymaps
 ** Config
 #+begin_src emacs-lisp
 (defun nkl/config-edit ()
