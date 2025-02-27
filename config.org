@@ -149,14 +149,6 @@
     "g"		'(:ignore t	:wk "[G]it")
     "g s"	'(magit-status	:wk "Ma[G]it [S]tatus")))
 #+end_src
-** Edit config
-#+begin_src emacs-lisp
-(defun nkl/edit-config ()
-  (interactive)
-  (find-file (expand-file-name "config.org" user-emacs-directory)))
-
-(global-set-key (kbd "C-c e") 'nkl/edit-config) ; [C]onfig [E]dit
-#+end_src
 ** Update config
 #+begin_src emacs-lisp
 (defun nkl/reload-config ()
