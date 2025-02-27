@@ -181,7 +181,8 @@
   (setq org-ellipsis "…")  ; ⤵ ▼ ⬎ …  
   (setq org-log-done 'time)
   (setq org-agenda-files (list
-			  (expand-file-name "roadmap.org" user-emacs-directory)))
+			  "~/w/2-areas/second-brain.org/"
+			  user-emacs-directory))
 
   (nkl/leader-key
     "n"		'(:ignore t	:wk "[N]otes")
