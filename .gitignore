@@ -13,3 +13,6 @@ projects
 recentf
 transient
 
+# TODO: Review this
+*#*
+org-roam.db
