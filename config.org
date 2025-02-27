@@ -121,6 +121,12 @@
   "a"	'(:ignore t	:wk "[A]lign")
   "a r"	'(align-regexp	:wk "[A]lign [R]egexp"))
 #+end_src
+** Indent
+#+begin_src emacs-lisp
+(nkl/leader-key
+  "i"	'(:ignore t	:wk "[I]ndent")
+  "i r"	'(indent-region	:wk "[I]ndent [R]egion"))
+#+end_src
 * Git
 ** Magit
 #+begin_src emacs-lisp
