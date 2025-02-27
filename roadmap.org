@@ -15,6 +15,20 @@ CLOSED: [2025-02-27 Thu 14:10]
   - [X] [[https://www.youtube.com/watch?v=X_iX5US1_xE&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with DT]]
   - [X] [[https://www.youtube.com/watch?v=_zfvQkJsYwI&t=105s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with SC]]
   - [X] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
+  
+* 📁 Emacs resources
+- https://github.com/dmgerman/yt-playlist
+- https://www.reddit.com/r/emacs/comments/189r48p/how_to_learn_emacs/
+- https://lucidmanager.org/categories/
+- https://www.youtube.com/watch?v=OaF-N-FuGtc&list=PLEoMzSkcN8oNmd98m_6FoaJseUsa6QGm2
+- https://www.youtube.com/watch?v=48JlgiBpw_I&list=PLEoMzSkcN8oPZvSdewHG8uApD7THlLLCV
+- https://github.com/cyrus-and/zoom
+- https://www.reddit.com/r/emacs/comments/np6ey4/how_packageel_works_with_use_package/
+- https://www.reddit.com/r/emacs/comments/t66hue/what_does_setq_packageenableatstartup_nil/
+- https://github.com/lccambiaghi
+- https://github.com/ikoamu/publish-org-roam-ui
+- https://www.reddit.com/r/OrgRoam/comments/1ggb5r4/obsidian_dataview_functionality_unlocked/
+- https://michaelneuper.com/posts/
 
 * TODO 🗃️ Backlog [0/16] [0%]
 - [ ] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
