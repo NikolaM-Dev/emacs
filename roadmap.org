@@ -15,6 +15,21 @@ CLOSED: [2025-02-27 Thu 14:10]
   - [X] [[https://www.youtube.com/watch?v=X_iX5US1_xE&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with DT]]
   - [X] [[https://www.youtube.com/watch?v=_zfvQkJsYwI&t=105s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with SC]]
   - [X] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
+    
+    
+* 🤤 Configs
+- https://www.youtube.com/@YisraelDovL/videos
+- https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/emacs/config.org?ref_type=heads
+- https://github.com/jakebox/jake-emacs/blob/main/jake-emacs/init.org?plain=1
+- https://github.com/daviwil/dotfiles/blob/master/.archive/Emacs.org
+- https://github.com/noctuid/general.el#override-keymaps-and-buffer-local-keybindings
+- https://github.com/daedreth/UncleDavesEmacs/blob/master/config.org
+- https://github.com/anschwa/emacs.d
+- https://github.com/protesilaos/dotfiles/blob/master/emacs/.emacs.d/prot-emacs.org
+- https://github.com/hrs/dotfiles/blob/main/emacs/.config/emacs/configuration.org?plain=1#configure-use-package
+- https://gitlab.com/daniel.arnqvist/emacs-config/-/blob/master/init.el?ref_type=heads
+- https://github.com/jwiegley/use-package?tab=readme-ov-file#conditional-loading-before-preface
+- https://github.com/ahyatt/emacs-setup/blob/master/.emacs.d/emacs.org
   
 * 📁 Emacs resources
 - https://github.com/dmgerman/yt-playlist
