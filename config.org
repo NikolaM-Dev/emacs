@@ -55,6 +55,15 @@
 #+begin_src emacs-lisp
 (use-package try)
 #+end_src
+** Functions
+*** nkl/load-theme
+#+begin_src emacs-lisp
+(defun nkl/load-theme (theme)
+  (interactive)
+  "Enhance `load-theme' by first disabling enabled themes."
+  (mapc #'disable-theme custom-enabled-themes)
+  (load-theme theme t))
+#+end_src
 * Options
 ** Autopairs
 #+begin_src emacs-lisp
