@@ -140,6 +140,10 @@
 
 (general-define-key "C-s" 'nkl/save-buffer)
 #+end_src
+** Quit
+#+begin_src emacs-lisp
+(general-define-key "C-q" 'evil-quit)
+#+end_src
 ** Global escape
 #+begin_src emacs-lisp
 (general-define-key "<escape>" 'keyboard-escape-quit)
