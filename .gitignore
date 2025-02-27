@@ -1,2 +1,9 @@
 # packages
 elpa
+
+# data files
+bookmarks
+history
+places
+projects
+recentf
