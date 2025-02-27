@@ -55,46 +55,6 @@
 #+begin_src emacs-lisp
 (use-package try)
 #+end_src
-* Evil
-I need =vi= like keybinds
-** Custom split functions
-*** window split
-#+begin_src emacs-lisp
-(defun nkl/window-split ()
-  (interactive)
-  (split-window-below)
-  (balance-windows)
-  (other-window 1))
-#+end_src
-*** window vsplitv
-#+begin_src emacs-lisp
-(defun nkl/window-vsplit ()
-  (interactive)
-  (split-window-right)
-  (balance-windows)
-  (other-window 1))
-#+end_src
-** Setup
-#+begin_src emacs-lisp
-(use-package evil
-  :init
-  (setq evil-want-integration t) ;; This is optional since it's already set to t by default.
-  (setq evil-want-keybinding nil)
-  (setq evil-want-C-u-scroll t)
-  (setq evil-undo-system 'undo-redo)
-  :config
-  (define-key evil-window-map "s" 'nkl/window-split)
-  (define-key evil-window-map "v" 'nkl/window-vsplit)
-
-  (evil-mode 1))
-#+end_src
-** ~evil-collection~
-#+begin_src emacs-lisp
-(use-package evil-collection
-  :after evil
-  :config
-  (evil-collection-init))
-#+end_src
 * Options
 ** Autopairs
 #+begin_src emacs-lisp
