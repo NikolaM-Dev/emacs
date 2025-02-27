@@ -145,6 +145,11 @@ I need =vi= like keybinds
 (savehist-mode)
 #+end_src
 * Keybinds
+* Git
+** Magit
+#+begin_src emacs-lisp
+(use-package magit
+#+end_src
 ** Edit config
 #+begin_src emacs-lisp
 (defun nkl/edit-config ()
@@ -325,10 +330,6 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   (setq yas-snippet-dirs (list (expand-file-name "snippets" user-emacs-directory)))
 
   (yas-global-mode))
-#+end_src
-* MaGit
-#+begin_src emacs-lisp
-(use-package magit)
 #+end_src
 * keycast
 #+begin_src emacs-lisp
