@@ -341,3 +341,27 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   :config
   (keycast-header-line-mode))
 #+end_src
+* Mini Harpoon
+#+begin_src emacs-lisp
+(defconst nkl/harpoon-file-list-path "~/.config/emacs/harpoon/harpoon.txt")
+
+(defun nkl/harpoon-list-get ()
+  (with-temp-buffer
+    (insert-file-contents nkl/harpoon-file-list-path)
+    (split-string (buffer-string) "\n" t)))
+
+(defun nkl/harpoon-list-edit ()
+  (interactive)
+  (find-file nkl/harpoon-file-list-path))
+
+(defun nkl/harpoon-list-add ()
+  (interactive)
+  (append-to-file (concat buffer-file-name "\n" ) nil nkl/harpoon-file-list-path))
+
+(defun nkl/harpoon-go-to (raw-position)
+  (interactive)
+  (let ((position (1- raw-position)))
+    (let ((list-item (nth position (nkl/harpoon-list-get))))
+      (when list-item
+	(find-file (file-truename list-item))))))
+#+end_src
