@@ -191,6 +191,15 @@
   :config
   (evil-collection-init))
 #+end_src
+** Org
+#+begin_src emacs-lisp
+(use-package evil-org
+  :after org
+  :hook (org-mode . evil-org-mode)
+  :config
+  (require 'evil-org-agenda)
+  (evil-org-agenda-set-keys))
+#+end_src
 * Git
 ** Magit
 #+begin_src emacs-lisp
