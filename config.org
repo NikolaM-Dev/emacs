@@ -404,6 +404,6 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 * Macros
 ** Verbatium
 #+begin_src emacs-lisp
-(defalias 'nkl/macro-verbatium
+(defalias 'nkl/macro-verbatim
    (kmacro "c i w = = <escape> P"))
 #+end_src
