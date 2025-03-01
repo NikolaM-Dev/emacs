@@ -218,6 +218,8 @@ CLOSED: [2025-02-27 Thu 14:10]
 - https://github.com/ikoamu/publish-org-roam-ui
 - https://www.reddit.com/r/OrgRoam/comments/1ggb5r4/obsidian_dataview_functionality_unlocked/
 - https://michaelneuper.com/posts/
+- https://nullprogram.com/
+- https://github.com/oantolin/orderless
 
 * Interesting configs
 ** Full scren by default
