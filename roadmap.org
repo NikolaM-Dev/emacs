@@ -3,12 +3,119 @@
 :end:
 #+title: Roadmap
 
-* PROJ Emacs Roadmap [6/11] [54%]
+* PROJ Emacs Roadmap [6/15] [40%]
+** TODO Org-Roam [1/4] [25%]
+*** DONE Base setup
+CLOSED: [2025-02-27 Thu 17:50] DEADLINE: <2025-02-27 Thu 18:00>
+*** TODO Org-Roam manual [41/56] [73%]
+DEADLINE: <2025-02-28 Fri 17:00>
+I'm working in [[file:~/w/2-areas/second-brain.org/roam.org][Roam]]
+**** DONE 1. Introduction
+CLOSED: [2025-02-27 Thu 21:35] DEADLINE: <2025-02-27 Thu 21:38>
+**** DONE 2. Target Audience
+CLOSED: [2025-02-27 Thu 21:38] DEADLINE: <2025-02-27 Thu 21:45>
+**** DONE 3. A Brief Introduction to the Zettelkasten Method
+CLOSED: [2025-02-27 Thu 21:48] DEADLINE: <2025-02-27 Thu 21:50>
+**** DONE 4. Installation
+CLOSED: [2025-02-27 Thu 21:50] DEADLINE: <2025-02-27 Thu 21:52>
+**** DONE 4.1. Installing from MELPA
+CLOSED: [2025-02-27 Thu 21:54] DEADLINE: <2025-02-27 Thu 21:55>
+**** DONE 4.2. Installing from source
+CLOSED: [2025-02-27 Thu 21:56]
+**** DONE 5. Getting Started
+CLOSED: [2025-02-28 Fri 13:56] DEADLINE: <2025-02-28 Fri 14:30>
+**** DONE 5.1. The Org-roam Node
+CLOSED: [2025-02-27 Thu 22:04] DEADLINE: <2025-02-27 Thu 22:03>
+**** DONE 5.2 Links between Nodes
+CLOSED: [2025-02-28 Fri 13:23] DEADLINE: <2025-02-28 Fri 13:25>
+**** DONE 5.3 Setting up Org-roam
+CLOSED: [2025-02-28 Fri 13:29] DEADLINE: <2025-02-28 Fri 13:35>
+**** DONE 5.4 Creating and Linking Nodes
+CLOSED: [2025-02-28 Fri 13:39] DEADLINE: <2025-02-28 Fri 13:40>
+**** DONE 5.5 Customizing Node Completions
+CLOSED: [2025-02-28 Fri 13:55] DEADLINE: <2025-02-28 Fri 14:10>
+**** DONE 6 Customizing Node Caching
+CLOSED: [2025-02-28 Fri 14:13] DEADLINE: <2025-02-28 Fri 14:30>
+**** DONE 6.1 How to cache
+CLOSED: [2025-02-28 Fri 13:59] DEADLINE: <2025-02-28 Fri 14:10>
+**** DONE 6.2 What to cache
+CLOSED: [2025-02-28 Fri 14:10] DEADLINE: <2025-02-28 Fri 14:10>
+**** DONE 6.3 When to cache
+CLOSED: [2025-02-28 Fri 14:12] DEADLINE: <2025-02-28 Fri 14:14>
+**** DONE 7 The Org-roam Buffer
+CLOSED: [2025-02-28 Fri 14:25] DEADLINE: <2025-02-28 Fri 14:30>
+**** DONE 7.1 Navigating the Org-roam Buffer
+CLOSED: [2025-02-28 Fri 14:27] DEADLINE: <2025-02-28 Fri 14:30>
+**** DONE 7.2 Configuring what is displayed in the buffer
+CLOSED: [2025-02-28 Fri 14:36] DEADLINE: <2025-02-28 Fri 14:35>
+**** DONE 7.3 Configuring the Org-roam buffer display
+CLOSED: [2025-02-28 Fri 14:41] DEADLINE: <2025-02-28 Fri 14:50>
+**** DONE 8 Node Properties
+CLOSED: [2025-02-28 Fri 14:42]
+**** DONE 8.1 Standard Org properties
+CLOSED: [2025-02-28 Fri 14:44]
+**** DONE 8.2 Titles and Aliases
+CLOSED: [2025-02-28 Fri 15:25] DEADLINE: <2025-02-28 Fri 15:25>
+**** DONE 8.3 Tags
+CLOSED: [2025-02-28 Fri 15:27] DEADLINE: <2025-02-28 Fri 15:30>
+**** DONE 8.4 Refs
+CLOSED: [2025-02-28 Fri 15:33] DEADLINE: <2025-02-28 Fri 15:32>
+**** DONE 9 Citations
+CLOSED: [2025-02-28 Fri 15:38] DEADLINE: <2025-02-28 Fri 15:40>
+**** DONE 9.1 Using the Cached Information
+CLOSED: [2025-02-28 Fri 15:41] DEADLINE: <2025-02-28 Fri 15:45>
+**** DONE 10 Completation
+CLOSED: [2025-02-28 Fri 16:23]
+**** DONE 10.1 Completing within Link Brackets
+CLOSED: [2025-02-28 Fri 16:27] DEADLINE: <2025-02-28 Fri 16:30>
+**** DONE 10.2 Completing anywhere
+CLOSED: [2025-02-28 Fri 16:28] DEADLINE: <2025-02-28 Fri 16:30>
+**** DONE 11 Encryptation
+CLOSED: [2025-02-28 Fri 16:29] DEADLINE: <2025-02-28 Fri 16:30>
+**** DONE 12 The Templating System
+CLOSED: [2025-02-28 Fri 16:33] DEADLINE: <2025-02-28 Fri 16:40>
+**** DONE 12.1 Template Walkthrough
+CLOSED: [2025-02-28 Fri 16:37] DEADLINE: <2025-02-28 Fri 16:42>
+**** DONE 12.2 Org-roam Template Expansion
+CLOSED: [2025-02-28 Fri 16:39] DEADLINE: <2025-02-28 Fri 16:45>
+**** TODO 13 Extensions
+**** DONE 14 Perfomance Optimization
+CLOSED: [2025-02-28 Fri 16:49]
+**** DONE 14.1 Garbage Collection
+CLOSED: [2025-02-28 Fri 16:51] DEADLINE: <2025-02-28 Fri 16:55>
+**** TODO 15 The Org-mode Ecosystem
+**** TODO 15.1 Browsing History with winner-mode
+**** DONE 15.2 Versioning Notes
+CLOSED: [2025-02-28 Fri 16:59]
+**** TODO 15.3 Full-text search with Deft
+**** TODO 15.4 Org-journal
+**** TODO 15.5 Org-download
+**** TODO 15.6 mathpix.el
+**** TODO 15.7 Org-noter / Interleave
+**** TODO 15.8 Bibliography
+**** TODO 15.9 Spaced Repetition
+**** TODO 16 FAQ
+**** TODO 16.1 How do I have more than one Org-roam directory?
+**** DONE 16.2 How do I create a note whose title already matches one of the candidates?
+CLOSED: [2025-02-28 Fri 17:34]
+**** DONE 16.3 How can I stop Org-roam from creating IDs everywhere?
+CLOSED: [2025-02-28 Fri 17:35]
+**** DONE 16.4 How do I migrate from Roam Research?
+CLOSED: [2025-02-28 Fri 17:38]
+**** DONE 16.5 How to migrate from Org-roam v1?
+CLOSED: [2025-02-28 Fri 17:40]
+**** TODO 16.6 How do I publish my notes with an Internet-friendly graph?
+**** TODO 17 Developer’s Guide to Org-roam
+**** TODO 18 Appendix
+*** TODO Review Org-Roam forums
+** TODO Auto save
+** TODO Add =C-^= keymap in insert mode
 ** TODO Add todos up, not down
 ** TODO Change themes keymap
 ** TODO Remove tempo call, use yasnippets instead
-** TODO Org-Roam
+** TODO View the video about PARA and Emacs
 ** TODO Org todo keywords
+** TODO [[https://github.com/jkitchin/org-ref][jkitchin/org-ref]]
 ** DONE Commit Changes
 CLOSED: [2025-02-27 Thu 15:48] DEADLINE: <2025-02-27 Thu 14:20>
 ** DONE Trim white space
