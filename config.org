@@ -206,6 +206,8 @@
   :config
   (define-key evil-window-map "s" 'nkl/window-split)
   (define-key evil-window-map "v" 'nkl/window-vsplit)
+  (define-key evil-normal-state-map (kbd "C-e") nil)
+  (define-key evil-motion-state-map (kbd "C-e") nil)
   ;; (define-key evil-motion-state-map (kbd "RET") nil)
   (setq org-return-follows-link t)
   (evil-global-set-key 'motion "j" 'evil-next-visual-line)
