@@ -171,6 +171,12 @@
 #+begin_src emacs-lisp
 (nkl/leader-key "h i" '(info :wk "[H]elp [I]nfo"))
 #+end_src
+** Windows
+#+begin_src emacs-lisp
+(nkl/leader-key
+  "w"	'(:ignore t		:wk "[W]indows")
+  "w w"	'(evil-window-next	:wk "Next [W]indow"))
+#+end_src
 * Evil
 ** Custom split functions
 *** window split
