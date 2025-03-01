@@ -167,6 +167,10 @@
 #+begin_src emacs-lisp
 (general-define-key [remap list-buffers] 'ibuffer)
 #+end_src
+** Info
+#+begin_src emacs-lisp
+(nkl/leader-key "h i" '(info :wk "[H]elp [I]nfo"))
+#+end_src
 * Evil
 ** Custom split functions
 *** window split
