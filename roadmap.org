@@ -7,7 +7,7 @@
 ** TODO Org-Roam [1/4] [25%]
 *** DONE Base setup
 CLOSED: [2025-02-27 Thu 17:50] DEADLINE: <2025-02-27 Thu 18:00>
-*** TODO Org-Roam manual [41/56] [73%]
+*** TODO Org-Roam manual [43/57] [75%]
 DEADLINE: <2025-02-28 Fri 17:00>
 I'm working in [[file:~/w/2-areas/second-brain.org/roam.org][Roam]]
 **** DONE 1. Introduction
@@ -106,7 +106,10 @@ CLOSED: [2025-02-28 Fri 17:38]
 CLOSED: [2025-02-28 Fri 17:40]
 **** TODO 16.6 How do I publish my notes with an Internet-friendly graph?
 **** TODO 17 Developer’s Guide to Org-roam
-**** TODO 18 Appendix
+**** DONE 18 Appendix
+CLOSED: [2025-02-28 Fri 21:27]
+**** DONE 18.1 Note-taking Workflows
+CLOSED: [2025-02-28 Fri 21:26] DEADLINE: <2025-02-28 Fri 21:30>
 *** TODO Review Org-Roam forums
 ** TODO Auto save
 ** TODO Add =C-^= keymap in insert mode
