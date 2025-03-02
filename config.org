@@ -492,3 +492,12 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 (setq-default show-trailing-whitespace t)
 (add-hook 'before-save-hook 'whitespace-cleanup)
 #+end_src
+* Super Save
+#+begin_src emacs-lisp
+(use-package super-save
+  :custom
+  (setq super-save-auto-save-when-idle t)
+  :config
+  (setq auto-save-default nil) ; TODO: Move this from here
+  (super-save-mode 1))
+#+end_src
