@@ -443,7 +443,7 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+end_src
 * Mini Harpoon
 #+begin_src emacs-lisp
-(defconst nkl/harpoon-file-list-path (concat (getenv "XDG_DATA_HOME") "/emacs/harpoon.txt"))
+(defconst nkl/harpoon-file-list-path (concat (getenv "XDG_DATA_HOME") "/emacs/harpoon/harpoon.txt"))
 
 (defun nkl/harpoon-list-get ()
   (with-temp-buffer
