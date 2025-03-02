@@ -266,13 +266,17 @@
   :config
   (setq org-ellipsis "…")  ; ⤵ ▼ ⬎ …  
   (setq org-log-done 'time)
+  (setq org-todo-keywords '((type
+                             "TODO(t)" "WAIT(h)"  "NEXT(n)"
+                             "PROJ(p)"
+                             "|" "DONE(d)" "CANCEL(C)")))
   (setq org-agenda-files (list
                           "~/w/2-areas/second-brain.org/"
                           user-emacs-directory))
 
   (nkl/leader-key
     "n"		'(:ignore t	:wk "[N]otes")
-    "n A"	'(org-agenda	:wk "Org [A]genda")))
+    "n a"	'(org-agenda	:wk "Org [A]genda")))
 #+end_src
 ** Tempo
 #+begin_src emacs-lisp
