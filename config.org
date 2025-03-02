@@ -498,6 +498,10 @@ Set src blocks automatic indent to ~0~ instead of ~1~
   :custom
   (setq super-save-auto-save-when-idle t)
   :config
-  (setq auto-save-default nil) ; TODO: Move this from here
+  (setq auto-save-default nil)
   (super-save-mode 1))
+#+end_src
+* TODO
+#+begin_src emacs-lisp
+(bind-key "C-c C-c" 'org-edit-src-exit org-src-mode-map)
 #+end_src
