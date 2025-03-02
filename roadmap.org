@@ -3,12 +3,11 @@
 :end:
 #+title: Roadmap
 
-* PROJ Emacs Roadmap [6/15] [40%]
+* PROJ Emacs Roadmap [7/15] [46%]
 ** TODO Org-Roam [1/4] [25%]
 *** DONE Base setup
 CLOSED: [2025-02-27 Thu 17:50] DEADLINE: <2025-02-27 Thu 18:00>
 *** TODO Org-Roam manual [43/57] [75%]
-DEADLINE: <2025-02-28 Fri 17:00>
 I'm working in [[file:~/w/2-areas/second-brain.org/roam.org][Roam]]
 **** DONE 1. Introduction
 CLOSED: [2025-02-27 Thu 21:35] DEADLINE: <2025-02-27 Thu 21:38>
@@ -111,7 +110,8 @@ CLOSED: [2025-02-28 Fri 21:27]
 **** DONE 18.1 Note-taking Workflows
 CLOSED: [2025-02-28 Fri 21:26] DEADLINE: <2025-02-28 Fri 21:30>
 *** TODO Review Org-Roam forums
-** TODO Auto save
+** DONE Auto save
+CLOSED: [2025-03-01 Sat 14:23]
 ** TODO Add =C-^= keymap in insert mode
 ** TODO Add todos up, not down
 ** TODO Change themes keymap
@@ -139,7 +139,6 @@ CLOSED: [2025-02-27 Thu 14:10]
   - [X] [[https://www.youtube.com/watch?v=X_iX5US1_xE&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with DT]]
   - [X] [[https://www.youtube.com/watch?v=_zfvQkJsYwI&t=105s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with SC]]
   - [X] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
-
 
 * TODO 🗃️ Backlog [0/16] [0%]
 - [ ] [[https://www.youtube.com/watch?v=2-0OwGTt0dI&t=587s&pp=ygULbWFnaXQgZW1hY3M%3D][Magit with Protesilaos]]
@@ -223,6 +222,8 @@ CLOSED: [2025-02-27 Thu 14:10]
 - https://michaelneuper.com/posts/
 - https://nullprogram.com/
 - https://github.com/oantolin/orderless
+- https://github.com/zaeph
+- https://github.com/jparcill/emacs_config
 
 * Interesting configs
 ** Full scren by default
