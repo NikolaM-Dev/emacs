@@ -492,16 +492,24 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 (setq-default show-trailing-whitespace t)
 (add-hook 'before-save-hook 'whitespace-cleanup)
 #+end_src
-* Super Save
-#+begin_src emacs-lisp
-(use-package super-save
-  :custom
-  (setq super-save-auto-save-when-idle t)
-  :config
-  (setq auto-save-default nil)
-  (super-save-mode 1))
-#+end_src
 * TODO
 #+begin_src emacs-lisp
 (bind-key "C-c C-c" 'org-edit-src-exit org-src-mode-map)
+#+end_src
+
+#+begin_src emacs-lisp
+(setq create-lockfiles nil)
+(setq auto-save-default nil)
+(auto-save-visited-mode 1)
+(setq auto-save-visited-interval 5)
+
+(defun xah-save-all-unsaved ()
+  "Save all unsaved files. no ask.
+Version 2019-11-05"
+  (interactive)
+  (save-some-buffers t ))
+
+(if (version< emacs-version "27.1")
+    (add-hook 'focus-out-hook 'xah-save-all-unsaved)
+  (setq after-focus-change-function 'xah-save-all-unsaved))
 #+end_src
