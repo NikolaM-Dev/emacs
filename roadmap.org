@@ -3,8 +3,8 @@
 :end:
 #+title: Roadmap
 
-* PROJ Emacs Roadmap [7/15] [46%]
-** TODO Org-Roam [1/4] [25%]
+* PROJ Emacs Roadmap [8/15] [53%]
+** TODO Org-Roam [1/2] [50%]
 *** DONE Base setup
 CLOSED: [2025-02-27 Thu 17:50] DEADLINE: <2025-02-27 Thu 18:00>
 *** TODO Org-Roam manual [43/57] [75%]
@@ -109,14 +109,14 @@ CLOSED: [2025-02-28 Fri 17:40]
 CLOSED: [2025-02-28 Fri 21:27]
 **** DONE 18.1 Note-taking Workflows
 CLOSED: [2025-02-28 Fri 21:26] DEADLINE: <2025-02-28 Fri 21:30>
-*** TODO Review Org-Roam forums
 ** DONE Auto save
 CLOSED: [2025-03-01 Sat 14:23]
 ** TODO Add =C-^= keymap in insert mode
 ** TODO Add todos up, not down
 ** TODO Change themes keymap
 ** TODO Remove tempo call, use yasnippets instead
-** TODO View the video about PARA and Emacs
+** DONE View the video about PARA and Emacs
+CLOSED: [2025-03-01 Sat 20:53] DEADLINE: <2025-03-01 Sat>
 ** TODO Org todo keywords
 ** TODO [[https://github.com/jkitchin/org-ref][jkitchin/org-ref]]
 ** DONE Commit Changes
@@ -308,6 +308,10 @@ Just one step a time
 - pretty-mode
 - forge
 - magit todos
+- ivy
+  - ivy rich mode
+- counsel
+- command-log-mode
 ** From commets
 - In dired I use the a key, which opens without keeping previous.
 - For deleting a previous ‘dired’ buffer in your ‘.emacs’ put a ‘(put 'dired-find-alternate-file 'disabled nil)’ and hit ‘a’ in ‘dired’.
