@@ -256,7 +256,7 @@
 (use-package rainbow-delimiters
   :hook (emacs-lisp-mode . rainbow-delimiters-mode))
 #+end_src
-* 🦄 Org
+* Org
 ** Setup
 #+begin_src emacs-lisp
 (use-package org
