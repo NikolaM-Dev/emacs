@@ -497,6 +497,14 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 (defalias 'nkl/macro-verbatim
    (kmacro "c i w = = <escape> P"))
 #+end_src
+** Format Paragraph
+#+begin_src emacs-lisp
+(defalias 'nkl/macro-format-paragraph
+  (kmacro "J M-q"))
+
+(nkl/leader-key
+  "SPC f p"	'(nkl/macro-format-paragraph	:wk "[N]ikola [F]ormat [P]aragraph"))
+#+end_src
 * Trim White Spaces
 #+begin_src emacs-lisp
 (setq-default require-final-newline t)
