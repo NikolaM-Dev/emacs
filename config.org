@@ -346,6 +346,21 @@ Set src blocks automatic indent to ~0~ instead of ~1~
 #+begin_src emacs-lisp
 (setq org-src-window-setup 'current-window)
 #+end_src
+* Roam
+#+begin_src emacs-lisp
+(use-package org-roam
+  :custom
+  (org-roam-db-location (concat (getenv "XDG_DATA_HOME") "/emacs/roam/org-roam.db"))
+  (org-roam-directory "~/w/2-areas/second-brain.org/2-areas/zettelkasten")
+  (org-roam-dailies-directory "../journal/daily")
+  :config
+  (nkl/leader-key
+    "n f"	'(org-roam-node-find			:wk "[N]ode [F]ind")
+    "n i"	'(org-roam-node-insert			:wk "[N]ode [I]nsert"))
+
+  (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
+  (setq org-roam-completion-everywhere t)
+  (org-roam-db-autosync-mode 1))
 #+end_src
 * UI
 ** Themes
