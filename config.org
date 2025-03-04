@@ -264,7 +264,7 @@
   :hook
   (org-mode . nkl/on-org-mode)
   :config
-  (setq org-ellipsis "…")  ; ⤵ ▼ ⬎ …  
+  (setq org-ellipsis "…")  ; ⮧ ⬎ ⤵ ▼ …  
   (setq org-log-done 'time)
   (setq org-todo-keywords '((type
                              "TODO(t)" "WAIT(h)"  "NEXT(n)"
