@@ -1,5 +1,6 @@
 :properties:
 #+author: NikolaM-Dev (Juan David Merchan Torres)
+#+language: en
 #+startup: content indent:end:
 #+title: Nikola's GNU Emacs configuration
 
