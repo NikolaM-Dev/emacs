@@ -278,10 +278,7 @@
                              "PROJ(p)"
                              "|" "DONE(d)" "CANCEL(C)" "SKIP(S)")))
   (setq org-agenda-files (list
-                          "~/w/2-areas/second-brain.org/2-areas/agenda/"
-                          "~/w/2-areas/second-brain.org/2-areas/english/"
-                          "~/w/2-areas/second-brain.org/2-areas/journal/daily/"
-                          "~/w/2-areas/second-brain.org/2-areas/zettelkasten/"
+                          (getenv "SECOND_BRAIN_PATH")
                           user-emacs-directory))
 
   (nkl/leader-key
