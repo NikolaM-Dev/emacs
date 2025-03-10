@@ -1,0 +1,48 @@
+# -*- mode: snippet -*-
+# name: daily
+# key: daily
+# --
+
+* `(format-time-string "%A, %d %B %Y")`
+
+* TODO Agenda [/] [%]
+** TODO Change ~Yesterday~ link
+** TODO Change ~Tomorrow~ link from yesterday agenda
+
+* Journal
+** What has made me feel grateful today?
+-
+
+** What did I achieve today that made me feel proud?
+-
+
+** What decisions did I make today that might have been more effective if I had reconsidered them?
+-
+
+** How did I feel emotionally during the day and what factors contributed to that state?
+-
+
+** What challenges did I face today, what did I learn from them? and if I did, how did I do it?
+-
+
+** What small changes could I make in my daily routine to be healthier, both physically and mentally?
+-
+
+** Were there times when I felt stressed or overwhelmed? How could I better handle these situations in the future?
+-
+
+** How can I improve my relationships?
+-
+
+** Based on what I learned today, what can I do to grow and improve in the future?
+-
+
+# ** How does today’s learning relate to my long term goals?
+# -
+
+** In what areas do I feel I need further development or training?
+-
+
+* See Also
+- Yesterday
+- Tomorrow
