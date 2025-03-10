@@ -276,7 +276,7 @@
   (setq org-todo-keywords '((type
                              "TODO(t)" "WAIT(h)"  "NEXT(n)"
                              "PROJ(p)"
-                             "|" "DONE(d)" "CANCEL(C)")))
+                             "|" "DONE(d)" "CANCEL(C)" "SKIP(S)")))
   (setq org-agenda-files (list
                           "~/w/2-areas/second-brain.org/2-areas/agenda/"
                           "~/w/2-areas/second-brain.org/2-areas/english/"
