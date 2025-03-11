@@ -6,8 +6,8 @@
 * `(format-time-string "%A, %d %B %Y")`
 
 * TODO Agenda [/] [%]
-** TODO Change ~Yesterday~ link
-** TODO Change ~Tomorrow~ link from yesterday agenda
+** TODO Change =Yesterday= link
+** TODO Change =Tomorrow= link from yesterday agenda
 
 * Journal
 ** What has made me feel grateful today?
