@@ -1,9 +1,9 @@
 :properties:
 #+author: NikolaM-Dev (Juan David Merchan Torres)
 #+language: en
-#+startup: content indent
+#+startup: content
 :end:
-#+title: Nikola's GNU Emacs configuration
+#+title: Nikola's GNU Emacs Configuration
 
 * Core
 ** =package.el=
